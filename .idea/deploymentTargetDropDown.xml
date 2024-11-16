@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="deploymentTargetDropDown">
+    <value>
+      <entry key="sample-3d-model-viewer">
+        <State />
+      </entry>
+      <entry key="sample-ar-model-viewer">
+        <State />
+      </entry>
+      <entry key="sample-ar-model-viewer-java">
+        <State />
+      </entry>
+      <entry key="sample-augmented-faces">
+        <State />
+      </entry>
+      <entry key="sample-augmented-images">
+        <State />
+      </entry>
+      <entry key="sample-depth">
+        <State />
+      </entry>
+      <entry key="sample-environment-lights">
+        <State />
+      </entry>
+      <entry key="sample-image-texture">
+        <State />
+      </entry>
+      <entry key="sample-video-texture">
+        <State />
+      </entry>
+    </value>
+  </component>
+</project>

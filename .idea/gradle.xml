@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/core" />
+            <option value="$PROJECT_DIR$/samples/3d-model-viewer" />
+            <option value="$PROJECT_DIR$/samples/ar-model-viewer" />
+            <option value="$PROJECT_DIR$/samples/ar-model-viewer-java" />
+            <option value="$PROJECT_DIR$/samples/augmented-faces" />
+            <option value="$PROJECT_DIR$/samples/augmented-images" />
+            <option value="$PROJECT_DIR$/samples/depth" />
+            <option value="$PROJECT_DIR$/samples/environment-lights" />
+            <option value="$PROJECT_DIR$/samples/image-texture" />
+            <option value="$PROJECT_DIR$/samples/video-texture" />
+            <option value="$PROJECT_DIR$/sceneform" />
+            <option value="$PROJECT_DIR$/ux" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
