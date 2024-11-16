@@ -1,10 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+    <layouts>
+      <layout url="file://$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/fragment_main.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/view_renderable_infos.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+    </layouts>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d325f4c-ca96-4ca1-9de7-e7e27a373ba0" name="Changes" comment="" />
+    <list default="true" id="2d325f4c-ca96-4ca1-9de7-e7e27a373ba0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/sceneform-android-master.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/assets/models/Bosch.glb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/HomeActivity1.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/ModelPlacementActivity5.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/ModelUseCasesActivity6.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/ModelViewUsesActivity4.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/ScanToolActivity2.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/ScanningActivity3.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/SettingsActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/ToolsListActivity7.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/sample/MainFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/drawable-xhdpi/group_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/drawable/anotherlogo.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/drawable/arrow_back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/drawable/backbutton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/drawable/bo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/drawable/bosch_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/drawable/boschtop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/drawable/group_10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/drawable/group_1_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/drawable/group_2_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/drawable/group_3_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/drawable/group_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/drawable/group_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/drawable/group_8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/drawable/group_9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/drawable/screenshot_2024_10_10_at_3_19_56pm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/mipmap-hdpi/ic_launcher_foreground.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/mipmap-mdpi/ic_launcher_foreground.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/mipmap-xhdpi/ic_launcher_foreground.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/values-night/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/values/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/xml/backup_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/sample/Activity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/MainFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/drawable-xxhdpi/halloween.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/drawable-xxhdpi/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/fragment_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/view_renderable_infos.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/values/themes.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,44 +118,73 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="layoutResourceFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2ovOuzbXYuj2EPtFTJT5Q4yFp1d" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Android App.sample-3d-model-viewer.executor&quot;: &quot;Run&quot;,
-    &quot;Android App.sample-ar-model-viewer-java.executor&quot;: &quot;Run&quot;,
-    &quot;Android App.sample-ar-model-viewer.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/prave/OneDrive/Desktop/sceneform-android-master/samples/ar-model-viewer/src/main/assets/models&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Android App.sample-3d-model-viewer.executor": "Run",
+    "Android App.sample-ar-model-viewer-java.executor": "Run",
+    "Android App.sample-ar-model-viewer.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "android-custom-viewC:/Users/prave/OneDrive/Desktop/sceneform-android-master/core/src/main/java/com/google/ar/sceneform/SceneView.java_SELECTED": "SceneView",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/prave/OneDrive/Desktop/sceneform-android-master/samples/ar-model-viewer/src/main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "AndroidSdkUpdater",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;kotlin-gradle-user-dirs&quot;: [
-      &quot;C:\\Users\\prave\\.gradle&quot;
+  "keyToStringList": {
+    "kotlin-gradle-user-dirs": [
+      "C:\\Users\\prave\\.gradle"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\prave\OneDrive\Desktop\sceneform-android-master\samples\ar-model-viewer\src\main" />
+      <recent name="C:\Users\prave\OneDrive\Desktop\sceneform-android-master\samples\ar-model-viewer\src\main\res" />
+      <recent name="C:\Users\prave\OneDrive\Desktop\sceneform-android-master\samples\ar-model-viewer\src\main\java" />
+      <recent name="C:\Users\prave\OneDrive\Desktop\sceneform-android-master\samples" />
       <recent name="C:\Users\prave\OneDrive\Desktop\sceneform-android-master\samples\ar-model-viewer\src\main\assets\models" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\prave\OneDrive\Desktop\sceneform-android-master\samples\ar-model-viewer\src\main" />
+      <recent name="C:\Users\prave\OneDrive\Desktop\sceneform-android-master\samples" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.google.ar.sceneform.samples.gltf.sample" />
+      <recent name="com.google.ar.sceneform.samples.gltf" />
+    </key>
   </component>
-  <component name="RunManager" selected="Android App.sample-ar-model-viewer">
+  <component name="RunManager">
     <configuration name="sample-3d-model-viewer" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="sceneform-android-master.sample-3d-model-viewer.main" />
       <option name="DEPLOY" value="true" />
@@ -413,7 +544,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1731746811825</updated>
-      <workItem from="1731746813772" duration="774000" />
+      <workItem from="1731746813772" duration="15308000" />
+      <workItem from="1731762314215" duration="780000" />
     </task>
     <servers />
   </component>
