@@ -20,7 +20,6 @@ import com.google.ar.sceneform.rendering.ModelRenderable
 import com.google.ar.sceneform.ux.ArFragment
 import com.google.ar.sceneform.ux.TransformableNode
 import com.gorisse.thomas.sceneform.scene.await
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 class ModelPlacementActivity5 : AppCompatActivity() {
@@ -41,38 +40,22 @@ class ModelPlacementActivity5 : AppCompatActivity() {
         // Animation buttons
         val buttonContainer: LinearLayout = findViewById(R.id.button_container)
         val animateButton1: Button = findViewById(R.id.animate_button1)
+        val animateButton2: Button = findViewById(R.id.animate_button2)
 
         // Place model button
         val placeModelButton: Button = findViewById(R.id.place_model_button)
 
         // Set animation buttons to trigger animations
         animateButton1.setOnClickListener {
-            modelNode?.renderableInstance?.let { instance ->
-                val animationCount = instance.animationCount
-                if (animationCount > 0) {
-                    // Play the audio message
-                    val mediaPlayer = MediaPlayer.create(this, R.raw.battery_open) // Replace 'audio_message' with your file name
-                    mediaPlayer.start()
-
-                    // Release the MediaPlayer after playback completes
-                    mediaPlayer.setOnCompletionListener {
-                        it.release()
-                    }
-
-                    // Define the sequence of animations
-                    val batteryLidAnimations = listOf("Closing Lid", "Open Latch.001", "Holder Box")                    // Launch a coroutine to play animations with delay
-                    lifecycleScope.launch {
-                        delay(2000L) // 2-second delay between animation and message
-                        for (animationName in batteryLidAnimations) {
-                            playAnimation(animationName) // Play animation
-                        }
-                    }
-                } else {
-                    Log.e("ModelPlacementActivity5", "No animations available")
-                }
-            } ?: Log.e("ModelPlacementActivity5", "Model instance is not initialized")
+            val batteryLidAnimations = listOf("Closing LidAction.001", "Open Latch.001Action.001", "Holder BoxAction")
+            allAnimations(batteryLidAnimations,R.raw.battery_open)
         }
 
+        // Set animation buttons to trigger animations
+        animateButton2.setOnClickListener {
+            val fallingAnimations = listOf("Closing LidAction.001")
+            allAnimations(fallingAnimations,R.raw.fall)
+        }
         // Place model on click
         placeModelButton.setOnClickListener {
             arFragment.arSceneView.arFrame?.let { frame ->
@@ -95,13 +78,54 @@ class ModelPlacementActivity5 : AppCompatActivity() {
         lifecycleScope.launchWhenCreated { loadModel() }
     }
 
+    private fun allAnimations(list: List<String>, voice: Int){
+        modelNode?.renderableInstance?.let { instance ->
+            val animationCount = instance.animationCount
+            if (animationCount > 0) {
+                // Play the audio message
+                val mediaPlayer = MediaPlayer.create(this,voice)
+                mediaPlayer.start()
+
+                // Release the MediaPlayer after playback completes
+                mediaPlayer.setOnCompletionListener {
+                    it.release()
+                }
+
+                // Define the sequence of animations
+                lifecycleScope.launch {
+                    for (animationName in list) {
+                        playAnimation(animationName) // Play animation
+                    }
+                }
+            } else {
+                Log.e("ModelPlacementActivity5", "No animations available")
+            }
+        } ?: Log.e("ModelPlacementActivity5", "Model instance is not initialized")
+    }
+
+    private fun listAvailableAnimations() {
+        modelNode?.renderableInstance?.let { instance ->
+            val animationCount = instance.animationCount
+            Log.d("ModelAnimations", "Total animations: $animationCount")
+
+            for (i in 0 until animationCount) {
+                val animationName = instance.getAnimationName(i)
+                Log.d("ModelAnimations", "Animation $i: $animationName")
+            }
+        } ?: Log.e("ModelPlacementActivity5", "Model instance is not initialized")
+    }
+
     // Load the 3D model asynchronously
     private suspend fun loadModel() {
         try {
             modelRenderable = ModelRenderable.builder()
-                .setSource(this, Uri.parse("models/Bosch1.glb")) // Load from assets
+                .setSource(this, Uri.parse("models/BoschBattery.glb")) // Load from assets
                 .setIsFilamentGltf(true)
                 .await() // Await the loading of the model
+//            modelRenderable2 = ModelRenderable.builder()
+//                .setSource(this, Uri.parse("models/untitled.glb")) // Load from assets
+//                .setIsFilamentGltf(true)
+//                .await() // Await the loading of the model
         } catch (e: Exception) {
             Log.e("ModelPlacementActivity5", "Error loading model", e)
         }
@@ -127,6 +151,7 @@ class ModelPlacementActivity5 : AppCompatActivity() {
                 select() // Enable the model for transformations
             }
             setupGestureDetectors()
+            listAvailableAnimations()
         } ?: run {
             Log.e("ModelPlacementActivity5", "Model is not loaded yet")
         }
