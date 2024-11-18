@@ -1,23 +1,27 @@
 package com.google.ar.sceneform.samples.gltf
 
 import android.graphics.Point
+import android.media.MediaPlayer
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.view.GestureDetector
 import android.view.MotionEvent
 import android.view.ScaleGestureDetector
+import android.view.View
 import android.widget.Button
+import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.google.ar.core.Anchor
 import com.google.ar.core.Plane
 import com.google.ar.sceneform.AnchorNode
-import com.google.ar.sceneform.math.Vector3
 import com.google.ar.sceneform.rendering.ModelRenderable
 import com.google.ar.sceneform.ux.ArFragment
 import com.google.ar.sceneform.ux.TransformableNode
 import com.gorisse.thomas.sceneform.scene.await
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 class ModelPlacementActivity5 : AppCompatActivity() {
     private lateinit var arFragment: ArFragment
@@ -30,11 +34,46 @@ class ModelPlacementActivity5 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main2) // Set the layout for the activity
+        setContentView(R.layout.activity_main2)
 
         arFragment = supportFragmentManager.findFragmentById(R.id.ux_fragment) as ArFragment
 
+        // Animation buttons
+        val buttonContainer: LinearLayout = findViewById(R.id.button_container)
+        val animateButton1: Button = findViewById(R.id.animate_button1)
+
+        // Place model button
         val placeModelButton: Button = findViewById(R.id.place_model_button)
+
+        // Set animation buttons to trigger animations
+        animateButton1.setOnClickListener {
+            modelNode?.renderableInstance?.let { instance ->
+                val animationCount = instance.animationCount
+                if (animationCount > 0) {
+                    // Play the audio message
+                    val mediaPlayer = MediaPlayer.create(this, R.raw.battery_open) // Replace 'audio_message' with your file name
+                    mediaPlayer.start()
+
+                    // Release the MediaPlayer after playback completes
+                    mediaPlayer.setOnCompletionListener {
+                        it.release()
+                    }
+
+                    // Define the sequence of animations
+                    val batteryLidAnimations = listOf("Closing Lid", "Open Latch.001", "Holder Box")                    // Launch a coroutine to play animations with delay
+                    lifecycleScope.launch {
+                        delay(2000L) // 2-second delay between animation and message
+                        for (animationName in batteryLidAnimations) {
+                            playAnimation(animationName) // Play animation
+                        }
+                    }
+                } else {
+                    Log.e("ModelPlacementActivity5", "No animations available")
+                }
+            } ?: Log.e("ModelPlacementActivity5", "Model instance is not initialized")
+        }
+
+        // Place model on click
         placeModelButton.setOnClickListener {
             arFragment.arSceneView.arFrame?.let { frame ->
                 if (frame.camera.trackingState == com.google.ar.core.TrackingState.TRACKING) {
@@ -43,17 +82,17 @@ class ModelPlacementActivity5 : AppCompatActivity() {
                             hit.trackable is Plane && (hit.trackable as Plane).isPoseInPolygon(hit.hitPose)
                         }?.let { hitResult ->
                             placeModel(hitResult.createAnchor())
+
+                            // After placing the model, make animation buttons visible and hide the place model button
+                            buttonContainer.visibility = View.VISIBLE
+                            placeModelButton.visibility = View.GONE
                         }
                 }
             }
         }
 
-        setupGestureDetectors()
-
         // Load the model asynchronously
-        lifecycleScope.launchWhenCreated {
-            loadModel()
-        }
+        lifecycleScope.launchWhenCreated { loadModel() }
     }
 
     // Load the 3D model asynchronously
@@ -84,16 +123,21 @@ class ModelPlacementActivity5 : AppCompatActivity() {
             // Create the TransformableNode and attach the model
             modelNode = TransformableNode(arFragment.transformationSystem).apply {
                 renderable = modelRenderable // Set the model for the node
-                localScale=Vector3(0.5f, 0.5f, 0.5f)
-                localPosition= Vector3(0.0f, 3.0f, -10.0f)
                 setParent(anchorNode) // Attach the node to the anchor node
                 select() // Enable the model for transformations
-                renderableInstance.setCulling(false)
-                renderableInstance.animate(true).start()
             }
+            setupGestureDetectors()
         } ?: run {
             Log.e("ModelPlacementActivity5", "Model is not loaded yet")
         }
+    }
+    private fun playAnimation(animationName: String) {
+        modelNode?.renderableInstance?.let { instance ->
+                val animation=instance.animate(animationName)
+                animation.start() // Play the animation
+                println(modelNode?.renderableInstance?.getAnimation(animationName))
+                Log.d("ModelAnimations", "Total animations: ${modelNode?.renderableInstance?.getAnimation(animationName)}")
+        } ?: Log.e("ModelPlacementActivity5", "Model is not initialized")
     }
 
     // Setup gesture detectors for scaling and scrolling
