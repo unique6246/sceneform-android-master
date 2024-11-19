@@ -119,7 +119,7 @@ class ModelPlacementActivity5 : AppCompatActivity() {
     private suspend fun loadModel() {
         try {
             modelRenderable = ModelRenderable.builder()
-                .setSource(this, Uri.parse("models/BoschBattery.glb")) // Load from assets
+                .setSource(this, Uri.parse("models/untitled.glb")) // Load from assets
                 .setIsFilamentGltf(true)
                 .await() // Await the loading of the model
 //            modelRenderable2 = ModelRenderable.builder()
