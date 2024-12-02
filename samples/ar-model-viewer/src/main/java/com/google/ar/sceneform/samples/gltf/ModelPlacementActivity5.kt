@@ -47,7 +47,8 @@ class ModelPlacementActivity5 : AppCompatActivity() {
 
         // Set animation buttons to trigger animations
         animateButton1.setOnClickListener {
-            val batteryLidAnimations = listOf("Closing LidAction.001", "Open Latch.001Action.001", "Holder BoxAction")
+            val batteryLidAnimations = listOf("Manual Operation 03 and 04 Intermediate", "Manual Operation 02", "Manual Operation 03",
+                "Manual Operation 04","Manual Operation 01","Manual Operation Always")
             allAnimations(batteryLidAnimations,R.raw.battery_open)
         }
 
@@ -119,7 +120,7 @@ class ModelPlacementActivity5 : AppCompatActivity() {
     private suspend fun loadModel() {
         try {
             modelRenderable = ModelRenderable.builder()
-                .setSource(this, Uri.parse("models/BoschBattery.glb")) // Load from assets
+                .setSource(this, Uri.parse("models/Manual_Operation.glb")) // Load from assets
                 .setIsFilamentGltf(true)
                 .await() // Await the loading of the model
 //            modelRenderable2 = ModelRenderable.builder()
