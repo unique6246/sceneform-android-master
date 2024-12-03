@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 
 class ModelUseCasesActivity6 : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
@@ -23,6 +24,16 @@ class ModelUseCasesActivity6 : AppCompatActivity() {
             startActivity(intent)
 
         }
+        val features=findViewById<ImageButton>(R.id.features)
+        features.setOnClickListener{
+            val intent =Intent(this,FeaturesActivity::class.java)
+            startActivity(intent)
+        }
 
+        val useCases=findViewById<ImageButton>(R.id.use_cases)
+        useCases.setOnClickListener{
+            val intent =Intent(this,UseCasesActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

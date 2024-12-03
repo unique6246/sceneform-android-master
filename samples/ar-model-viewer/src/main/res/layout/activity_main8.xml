@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#B0B6EC">
+    android:background="#1D3A87">
 
     <!-- Header section with Back, Bosch logo, and Settings -->
 
@@ -31,24 +31,14 @@
         android:layout_marginTop="18dp"
         android:alpha="0"
         android:text="Button" />
-
-    <Button
-        android:id="@+id/settings_button"
-        android:layout_width="64dp"
-        android:layout_height="31dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="655dp"
-        android:alpha="0"
-        android:text="Button" />
+    
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="588dp"
-        android:text="Tools"
+        android:text="@string/tools"
         android:textSize="45sp" />
 
     <RadioButton
@@ -57,27 +47,37 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="541dp"
         android:checked="true"
-        android:contentDescription="Cool Button"
-        android:text="Mouse"
+        android:text="@string/rotary_laser"
         android:textSize="15sp" />
 
-    <RadioButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="453dp"
-        android:checked="true"
-        android:contentDescription="Cool Button"
-        android:text="Keyboard"
-        android:textSize="15sp" />
+<!--    <RadioButton-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginBottom="453dp"-->
+<!--        android:checked="true"-->
+<!--        android:contentDescription="Cool Button"-->
+<!--        android:text="Keyboard"-->
+<!--        android:textSize="15sp" />-->
 
-    <RadioButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="354dp"
-        android:checked="true"
-        android:contentDescription="Cool Button"
-        android:text="Menu Label"
-        android:textSize="15sp" />
+<!--    <RadioButton-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginBottom="354dp"-->
+<!--        android:checked="true"-->
+<!--        android:contentDescription="Cool Button"-->
+<!--        android:text="Menu Label"-->
+<!--        android:textSize="15sp" />-->
+    <Button
+            android:id="@+id/settings_button"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:alpha="0"
+    />
+
 </RelativeLayout>

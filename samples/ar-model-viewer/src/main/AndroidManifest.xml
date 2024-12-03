@@ -52,6 +52,12 @@
                 android:name=".ModelPlacementActivity5"
                 android:exported="false" />
         <activity
+                android:name=".FeaturesActivity"
+                android:exported="false" />
+        <activity
+                android:name=".UseCasesActivity"
+                android:exported="false" />
+        <activity
                 android:name=".HomeActivity1"
                 android:exported="true">
             <intent-filter>

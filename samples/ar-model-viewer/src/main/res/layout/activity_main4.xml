@@ -10,14 +10,13 @@
     <!-- Place model in your environment button -->
     <ImageButton
         android:id="@+id/some_button"
-        android:layout_width="269dp"
-        android:layout_height="56dp"
+        android:layout_width="325dp"
+        android:layout_height="80dp"
         android:layout_centerInParent="true"
         android:layout_marginTop="100dp"
         android:src="@drawable/group_4"
-        android:text="cool buton"
-        android:textColor="#FFFFFF"
-        android:contentDescription="cool"/>
+        android:background="@drawable/group_4"
+        />
 
     <!-- See model use cases button -->
 
@@ -41,16 +40,17 @@
         android:layout_marginBottom="637dp"
         android:alpha="0"
         android:text="Button" />
-
+    
     <Button
-        android:id="@+id/settings_button"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="631dp"
-        android:alpha="0"
-        android:text="Button" />
+            android:id="@+id/settings_button"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:alpha="0"
+    />
+
 
 </RelativeLayout>

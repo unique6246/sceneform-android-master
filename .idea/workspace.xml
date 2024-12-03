@@ -5,12 +5,57 @@
       <config />
     </shared>
     <layouts>
+      <layout url="file://$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_features.xml">
+        <config>
+          <theme>@style/Theme.MyApplication</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main.xml">
         <config>
           <theme>@style/Theme.MyApplication</theme>
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main2.xml">
+        <config>
+          <theme>@style/Theme.MyApplication</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main3.xml">
+        <config>
+          <theme>@style/Theme.MyApplication</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main4.xml">
+        <config>
+          <theme>@style/Theme.MyApplication</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main5.xml">
+        <config>
+          <theme>@style/Theme.MyApplication</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main6.xml">
+        <config>
+          <theme>@style/Theme.MyApplication</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main7.xml">
+        <config>
+          <theme>@style/Theme.MyApplication</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main8.xml">
+        <config>
+          <theme>@style/Theme.MyApplication</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_use_cases.xml">
+        <config>
+          <theme>@style/Theme.MyApplication</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/view_renderable_infos.xml">
         <config>
           <theme>@style/Theme.MyApplication</theme>
         </config>
@@ -26,18 +71,50 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d325f4c-ca96-4ca1-9de7-e7e27a373ba0" name="Changes" comment="animation setup 2">
-      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/assets/models/BatteryRemoval.glb" afterDir="false" />
+    <list default="true" id="2d325f4c-ca96-4ca1-9de7-e7e27a373ba0" name="Changes" comment="animations">
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/FeaturesActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/UseCasesActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/drawable/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/drawable/renderable_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_features.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_use_cases.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/view_renderable_infos.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/resources.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileDebugKotlin/cacheable/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileDebugKotlin/cacheable/last-build.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileDebugKotlin/localstate/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileDebugKotlin/localstate/build-history.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/ModelPlacementActivity5.kt" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/ModelPlacementActivity5.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/ModelUseCasesActivity6.kt" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/ModelUseCasesActivity6.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/ScanToolActivity2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/ScanToolActivity2.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/SettingsActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/SettingsActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sceneform/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sceneform/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ux/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ux/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ux/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/ux/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +211,7 @@
     &quot;android-custom-viewC:/Users/prave/OneDrive/Desktop/sceneform-android-master/samples/environment-lights/src/main/java/com/google/ar/sceneform/samples/environmentlights/Extensions.kt_SELECTED&quot;: &quot;FitsSystemWindowsConstraintLayout&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/prave/OneDrive/Downloads/instaLens-main/instaLens-main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/prave/OneDrive/Desktop/sceneform-android-master/samples/ar-model-viewer/src/main/res/layout&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -154,18 +231,22 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\prave\OneDrive\Desktop\sceneform-android-master\samples\ar-model-viewer\src\main\res\layout" />
+      <recent name="C:\Users\prave\OneDrive\Desktop\sceneform-android-master\samples\ar-model-viewer\src\main\res\drawable" />
+      <recent name="C:\Users\prave\OneDrive\Desktop\sceneform-android-master\samples\ar-model-viewer\src\main\res\layout\info" />
       <recent name="C:\Users\prave\OneDrive\Desktop\sceneform-android-master\samples\ar-model-viewer\src\main\assets\models" />
       <recent name="C:\Users\prave\OneDrive\Desktop\sceneform-android-master\samples\ar-model-viewer\src\main\res\raw" />
-      <recent name="C:\Users\prave\OneDrive\Desktop\sceneform-android-master\samples\ar-model-viewer\src\main" />
-      <recent name="C:\Users\prave\OneDrive\Desktop\sceneform-android-master\samples\ar-model-viewer\src\main\res" />
-      <recent name="C:\Users\prave\OneDrive\Desktop\sceneform-android-master\samples\ar-model-viewer\src\main\java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\prave\OneDrive\Desktop\sceneform-android-master\samples\ar-model-viewer\src\main\res\layout" />
       <recent name="C:\Users\prave\OneDrive\Desktop\sceneform-android-master\samples\ar-model-viewer\src\main" />
       <recent name="C:\Users\prave\OneDrive\Desktop\sceneform-android-master\samples" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="com.google.ar.sceneform.samples.gltf.sample" />
+      <recent name="com.google.ar.sceneform.samples.gltf" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="com.google.ar.sceneform.samples.gltf" />
     </key>
   </component>
@@ -547,6 +628,10 @@
       <workItem from="1732688747865" duration="685000" />
       <workItem from="1732709534808" duration="672000" />
       <workItem from="1732900215745" duration="46000" />
+      <workItem from="1733125916959" duration="29952000" />
+      <workItem from="1733203557857" duration="2057000" />
+      <workItem from="1733214467310" duration="33000" />
+      <workItem from="1733214528065" duration="47000" />
     </task>
     <task id="LOCAL-00001" summary="setup">
       <option name="closed" value="true" />
@@ -572,7 +657,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731934413025</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="animations">
+      <option name="closed" value="true" />
+      <created>1733128626800</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733128626800</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -582,6 +675,7 @@
     <MESSAGE value="setup" />
     <MESSAGE value="animation setup" />
     <MESSAGE value="animation setup 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="animation setup 2" />
+    <MESSAGE value="animations" />
+    <option name="LAST_COMMIT_MESSAGE" value="animations" />
   </component>
 </project>

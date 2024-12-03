@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.ImageButton
 
@@ -24,6 +25,7 @@ class ScanToolActivity2 : AppCompatActivity() {
         }
         val fourth=findViewById<Button>(R.id.settings_button)
         fourth.setOnClickListener {
+            Log.d("ScanToolActivity2","Settings button clicked")
             val intent=Intent(this, SettingsActivity::class.java)
             startActivity(intent)
 

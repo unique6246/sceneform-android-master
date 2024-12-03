@@ -12,44 +12,44 @@
     <!-- See model use cases button -->
 
     <ImageButton
-        android:id="@+id/place_button"
-        android:layout_width="214dp"
-        android:layout_height="56dp"
+        android:id="@+id/use_cases"
+        android:layout_width="243dp"
+        android:layout_height="75dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="320dp"
         android:layout_marginEnd="110dp"
         android:src="@drawable/group_10"
-        android:text="Place model in your environment"
-        android:textColor="#FFFFFF" />
+        android:background="@drawable/group_10"
+         />
 
     <ImageButton
-        android:id="@+id/model_button"
-        android:layout_width="215dp"
-        android:layout_height="76dp"
-        android:layout_below="@id/place_button"
+        android:id="@+id/features"
+        android:layout_width="243dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/use_cases"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="97dp"
         android:layout_marginTop="134dp"
         android:layout_marginEnd="100dp"
         android:src="@drawable/group_9"
-        android:text="See model use cases"
-        android:textColor="#FFFFFF" />
+        android:background="@drawable/group_9"
+        />
 
     <ImageButton
         android:id="@+id/model_button2"
-        android:layout_width="215dp"
-        android:layout_height="76dp"
-        android:layout_below="@id/place_button"
+        android:layout_width="247dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/use_cases"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="98dp"
         android:layout_marginTop="-231dp"
         android:layout_marginEnd="99dp"
         android:src="@drawable/group_8"
-        android:text="See model use cases"
-        android:textColor="#FFFFFF" />
+        android:background="@drawable/group_8"
+         />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -72,13 +72,14 @@
         android:text="Button"
         android:alpha="0" />
     <Button
-        android:id="@+id/settings_button"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="637dp"
-        android:alpha="0"
-        android:text="Button" />
+            android:id="@+id/settings_button"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:alpha="0"
+    />
+
 </RelativeLayout>

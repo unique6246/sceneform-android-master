@@ -16,7 +16,10 @@ import androidx.lifecycle.lifecycleScope
 import com.google.ar.core.Anchor
 import com.google.ar.core.Plane
 import com.google.ar.sceneform.AnchorNode
+import com.google.ar.sceneform.Node
+import com.google.ar.sceneform.math.Vector3
 import com.google.ar.sceneform.rendering.ModelRenderable
+import com.google.ar.sceneform.rendering.ViewRenderable
 import com.google.ar.sceneform.ux.ArFragment
 import com.google.ar.sceneform.ux.TransformableNode
 import com.gorisse.thomas.sceneform.scene.await
@@ -30,6 +33,8 @@ class ModelPlacementActivity5 : AppCompatActivity() {
     private var anchorNode: AnchorNode? = null
 
     private var modelRenderable: ModelRenderable? = null
+    private var modelView: ViewRenderable? = null
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,7 +45,6 @@ class ModelPlacementActivity5 : AppCompatActivity() {
         // Animation buttons
         val buttonContainer: LinearLayout = findViewById(R.id.button_container)
         val animateButton1: Button = findViewById(R.id.animate_button1)
-        val animateButton2: Button = findViewById(R.id.animate_button2)
 
         // Place model button
         val placeModelButton: Button = findViewById(R.id.place_model_button)
@@ -51,11 +55,7 @@ class ModelPlacementActivity5 : AppCompatActivity() {
             allAnimations(batteryLidAnimations,R.raw.battery_open)
         }
 
-        // Set animation buttons to trigger animations
-        animateButton2.setOnClickListener {
-            val fallingAnimations = listOf("Closing LidAction.001")
-            allAnimations(fallingAnimations,R.raw.fall)
-        }
+
         // Place model on click
         placeModelButton.setOnClickListener {
             arFragment.arSceneView.arFrame?.let { frame ->
@@ -77,6 +77,9 @@ class ModelPlacementActivity5 : AppCompatActivity() {
         // Load the model asynchronously
         lifecycleScope.launchWhenCreated { loadModel() }
     }
+
+
+
 
     private fun allAnimations(list: List<String>, voice: Int){
         modelNode?.renderableInstance?.let { instance ->
@@ -121,11 +124,11 @@ class ModelPlacementActivity5 : AppCompatActivity() {
             modelRenderable = ModelRenderable.builder()
                 .setSource(this, Uri.parse("models/BoschBattery.glb")) // Load from assets
                 .setIsFilamentGltf(true)
-                .await() // Await the loading of the model
-//            modelRenderable2 = ModelRenderable.builder()
-//                .setSource(this, Uri.parse("models/untitled.glb")) // Load from assets
-//                .setIsFilamentGltf(true)
-//                .await() // Await the loading of the model
+                .await()
+
+            modelView=ViewRenderable.builder()
+                .setView(this,R.layout.view_renderable_infos)
+                .await()
         } catch (e: Exception) {
             Log.e("ModelPlacementActivity5", "Error loading model", e)
         }
@@ -150,12 +153,29 @@ class ModelPlacementActivity5 : AppCompatActivity() {
                 setParent(anchorNode) // Attach the node to the anchor node
                 select() // Enable the model for transformations
             }
+//            logAllNodes(modelNode)
             setupGestureDetectors()
             listAvailableAnimations()
+            attachViewRenderable()
+
         } ?: run {
             Log.e("ModelPlacementActivity5", "Model is not loaded yet")
         }
     }
+
+//    private fun logAllNodes(node: Node?, depth: Int = 0) {
+//        node?.let {
+//            val indent = "  ".repeat(depth)  // Indentation to represent hierarchy
+//            Log.d("ModelNodes", "$indent Node name: ${it.name}")
+//
+//            // If the node has a child, log the child nodes recursively
+//            for (i in 0 until it.children.size) {
+//                logAllNodes(it.children[i], depth + 1)  // Recursive call to log children
+//            }
+//        }
+//    }
+
+
     private fun playAnimation(animationName: String) {
         modelNode?.renderableInstance?.let { instance ->
                 val animation=instance.animate(animationName)
@@ -221,5 +241,14 @@ class ModelPlacementActivity5 : AppCompatActivity() {
         val vw = arFragment.requireView().width
         val vh = arFragment.requireView().height
         return Point(vw / 2, vh / 2)
+    }
+    private fun attachViewRenderable() {
+        modelView?.let { viewRenderable ->
+                Node().apply {
+                setParent(modelNode)
+                localPosition = Vector3(0f, modelNode?.localScale?.y ?: 0.5f, 0f) // Adjust height above the model
+                renderable = viewRenderable
+            }
+        } ?: Log.e("ModelPlacementActivity5", "ViewRenderable is not initialized")
     }
 }

@@ -1,191 +1,198 @@
 <RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#d6dbe8">
-
-
-    <ImageView
-        android:id="@+id/imageView4"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        app:srcCompat="@drawable/screenshot_2024_10_10_at_3_19_56pm" />
-
+        android:layout_height="match_parent"
+        android:background="#d6dbe8">
+    
+    <!-- Header Image -->
     <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="match_parent"
-        android:layout_height="16dp"
-        app:srcCompat="@drawable/bo" />
-
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/screenshot_2024_10_10_at_3_19_56pm" />
+    
+    <!-- Divider Image -->
+    <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_below="@id/imageView4"
+            app:srcCompat="@drawable/bo"/>
+    
+    <!-- Back Button -->
     <Button
-        android:id="@+id/back_button"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="637dp"
-        android:alpha="0"
-        android:text="Button" />
-
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:alpha="0"
+            android:text="Back"
+            android:textSize="18sp" />
+    
+    <!-- System Text -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="613dp"
-        android:background="#B5B6B8"
-        android:padding="8dp"
-        android:text="System"
-        android:textSize="16sp"
-        android:textStyle="bold" />
-
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView6"
+            android:layout_marginTop="8dp"
+            android:background="#1D3A87"
+            android:padding="12dp"
+            android:text="System"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
+    
+    <!-- App Version Section -->
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="561dp"
-        android:background="#d6dbe8"
-        android:orientation="horizontal"
-        android:paddingHorizontal="8dp"
-        android:paddingVertical="12dp">
-
-        <TextView
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:clickable="true"
-            android:text="App Version"
-            android:textColor="#192276"
-            android:textSize="16sp" />
-
+            android:layout_below="@id/imageView6"
+            android:layout_marginTop="50dp"
+            android:background="#d6dbe8"
+            android:orientation="horizontal"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="12dp">
+        
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="1.0.0"
-            android:textColor="@android:color/black"
-            android:textSize="16sp" />
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="App Version"
+                android:textColor="#192276"
+                android:textSize="20sp" />
+        
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.0.0"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
     </LinearLayout>
-
+    
+    <!-- Language Section -->
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="461dp"
-        android:background="#d6dbe8"
-        android:clickable="true"
-        android:focusable="true"
-        android:onClick="onLanguageClick"
-        android:orientation="horizontal"
-        android:paddingHorizontal="8dp"
-        android:paddingVertical="12dp"> <!-- Method to handle click -->
-
-        <TextView
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_below="@id/imageView6"
+            android:layout_marginTop="100dp"
+            android:background="#d6dbe8"
             android:clickable="true"
-            android:text="Language"
-            android:textColor="#192276"
-            android:textSize="16sp" />
-
+            android:focusable="true"
+            android:onClick="onLanguageClick"
+            android:orientation="horizontal"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="12dp">
+        
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=">"
-            android:textColor="@android:color/black"
-            android:textSize="16sp" />
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Language"
+                android:textColor="#192276"
+                android:textSize="20sp" />
+        
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=">"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
     </LinearLayout>
-
+    
+    <!-- Publisher Section -->
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="513dp"
-        android:background="#d6dbe8"
-        android:orientation="horizontal"
-        android:paddingHorizontal="8dp"
-        android:paddingVertical="12dp">
-
-        <TextView
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:clickable="true"
-            android:text="Publisher"
-            android:textColor="#192276"
-            android:textSize="16sp" />
-
+            android:layout_below="@id/imageView6"
+            android:layout_marginTop="150dp"
+            android:background="#d6dbe8"
+            android:orientation="horizontal"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="12dp">
+        
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Bosch"
-            android:textColor="@android:color/black"
-            android:textSize="16sp" />
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Publisher"
+                android:textColor="#192276"
+                android:textSize="20sp" />
+        
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bosch"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
     </LinearLayout>
-
+    
+    <!-- Help Section -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="421dp"
-        android:background="#B5B6B8"
-        android:padding="8dp"
-        android:text="Help"
-        android:textSize="16sp"
-        android:textStyle="bold" />
-
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView6"
+            android:layout_marginTop="200dp"
+            android:background="#1D3A87"
+            android:padding="12dp"
+            android:text="Help"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
+    
+    <!-- Contact Us Section -->
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="325dp"
-        android:background="#d6dbe8"
-        android:clickable="true"
-        android:focusable="true"
-        android:onClick="onContactUsClick"
-        android:orientation="horizontal"
-        android:paddingHorizontal="8dp"
-        android:paddingVertical="12dp"> <!-- Method to handle click -->
-
-        <TextView
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_below="@id/imageView6"
+            android:layout_marginTop="250dp"
+            android:background="#d6dbe8"
             android:clickable="true"
-            android:text="Contact us"
-            android:textColor="#192276"
-            android:textSize="16sp" />
-
+            android:focusable="true"
+            android:onClick="onContactUsClick"
+            android:orientation="horizontal"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="12dp">
+        
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=">"
-            android:textColor="@android:color/black"
-            android:textSize="16sp" />
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Contact us"
+                android:textColor="#192276"
+                android:textSize="20sp" />
+        
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=">"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
     </LinearLayout>
-
+    
+    <!-- About Us Section -->
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="372dp"
-        android:background="#d6dbe8"
-        android:clickable="true"
-        android:focusable="true"
-        android:onClick="onAboutUsClick"
-        android:orientation="horizontal"
-        android:paddingHorizontal="8dp"
-        android:paddingVertical="12dp"> <!-- Method to handle click -->
-
-        <TextView
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_below="@id/imageView6"
+            android:layout_marginTop="300dp"
+            android:background="#d6dbe8"
             android:clickable="true"
-            android:text="About us"
-            android:textColor="#192276"
-            android:textSize="16sp" />
-
-
+            android:focusable="true"
+            android:onClick="onAboutUsClick"
+            android:orientation="horizontal"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="12dp">
+        
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="About us"
+                android:textColor="#192276"
+                android:textSize="20sp" />
     </LinearLayout>
-
 </RelativeLayout>

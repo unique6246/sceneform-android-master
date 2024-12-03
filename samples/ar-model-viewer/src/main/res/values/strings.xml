@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">Bosch App testing</string>
     <string name="place_model">Place Model</string>
+    <string name="popup_default_text"/>
+    <string name="popup_image_desc"/>
+    <string name="fall_animation">Fall animation</string>
+    <string name="open_lid_animation">Open lid animation</string>
+    <string name="img_description">Rotary Laser</string>
+    <string name="tools">Tools</string>
+    <string name="rotary_laser">Rotary Laser</string>
+    <string name="manual_operation">Manual Operation</string>
+    <string name="automatic_levelling">Automatic Levelling</string>
 </resources>

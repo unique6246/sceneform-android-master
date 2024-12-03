@@ -13,27 +13,25 @@
 
     <ImageButton
         android:id="@+id/place_button"
-        android:layout_width="214dp"
-        android:layout_height="56dp"
+        android:layout_width="325dp"
+        android:layout_height="80dp"
         android:layout_centerInParent="true"
         android:layout_marginTop="100dp"
         android:src="@drawable/group_5"
-        android:text="Place model in your environment"
-        android:textColor="#FFFFFF" />
+        android:background="@drawable/group_5"
+    />
 
     <ImageButton
         android:id="@+id/model_button"
-        android:layout_width="215dp"
-        android:layout_height="76dp"
+        android:layout_width="255dp"
+        android:layout_height="102dp"
         android:layout_below="@id/place_button"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
         android:layout_marginStart="102dp"
         android:layout_marginTop="93dp"
         android:layout_marginEnd="95dp"
         android:src="@drawable/group_6"
-        android:text="See model use cases"
-        android:textColor="#FFFFFF" />
+        android:background="@drawable/group_6"
+    />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -56,13 +54,14 @@
         android:text="Button"
         android:alpha="0" />
     <Button
-        android:id="@+id/settings_button"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="637dp"
-        android:alpha="0"
-        android:text="Button" />
+            android:id="@+id/settings_button"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:alpha="0"
+    />
+
 </RelativeLayout>

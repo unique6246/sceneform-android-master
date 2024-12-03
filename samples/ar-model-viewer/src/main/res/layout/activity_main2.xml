@@ -6,8 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeActivity1">
-
-    <!-- AR Fragment to handle AR view and interactions -->
+    
+        <!-- AR Fragment to handle AR view and interactions -->
     <fragment
         android:name="com.google.ar.sceneform.ux.ArFragment"
         android:id="@+id/ux_fragment"
@@ -34,13 +34,13 @@
                 android:id="@+id/animate_button1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Open lid animation"/>
+                android:text="@string/open_lid_animation"/>
         
-        <Button
-                android:text="Fall animation"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/animate_button2"/>
+<!--        <Button-->
+<!--                android:text="@string/fall_animation"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/animate_button2"/>-->
         
     </LinearLayout>
 

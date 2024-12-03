@@ -51,5 +51,7 @@ dependencies {
 
     // Sceneform
     releaseImplementation "com.gorisse.thomas.sceneform:sceneform:1.23.0"
+    releaseImplementation "com.gorisse.sceneform:filament-utils:1.20.3"
+    releaseImplementation "com.gorisse.sceneform:core:1.17.1"
     debugApi project(":sceneform")
 }
