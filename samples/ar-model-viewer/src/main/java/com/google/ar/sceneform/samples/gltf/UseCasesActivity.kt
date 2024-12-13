@@ -1,4 +1,5 @@
 package com.google.ar.sceneform.samples.gltf
+
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 
