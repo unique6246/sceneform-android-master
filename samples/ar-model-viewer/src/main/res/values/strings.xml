@@ -10,4 +10,7 @@
     <string name="rotary_laser">Rotary Laser</string>
     <string name="manual_operation">Manual Operation</string>
     <string name="automatic_levelling">Automatic Levelling</string>
+    <string name="angle_selection">Angle Selection</string>
+    <string name="rotation_operation">Rotational Operation</string>
+
 </resources>

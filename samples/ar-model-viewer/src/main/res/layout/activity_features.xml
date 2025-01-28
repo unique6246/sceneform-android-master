@@ -33,5 +33,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/manual_operation" />
+        <Button
+                android:id="@+id/feature_button_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/angle_selection" />
+        <Button
+                android:id="@+id/feature_button_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rotation_operation" />
     </LinearLayout>
 </RelativeLayout>

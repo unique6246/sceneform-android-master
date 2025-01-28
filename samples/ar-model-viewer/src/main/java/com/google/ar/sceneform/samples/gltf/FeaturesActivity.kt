@@ -43,24 +43,41 @@ class FeaturesActivity : AppCompatActivity() {
 
         val featureButton1: Button = findViewById(R.id.feature_button_1)
         val featureButton2: Button = findViewById(R.id.feature_button_2)
+        val featureButton3: Button = findViewById(R.id.feature_button_3)
+        val featureButton4: Button = findViewById(R.id.feature_button_4)
+
 
         // Load models
         lifecycleScope.launchWhenCreated {
-            loadModel("models/Automatic_Levelling.glb")
-            loadModel("models/Manual_Operation.glb")
+            loadModel("models/Man_levelling.glb")
+            loadModel("models/Auto_levelling.glb")
+            loadModel("models/Angle Selection.glb")
+            loadModel("models/Rotational Operation.glb")
+
+
             loadViewRenderable()
         }
 
         featureButton1.setOnClickListener {
-            val animations = listOf("Automatic Levelling 01", "Automatic Levelling 03", "Automatic Levelling 02")
+            val animations = listOf("Colorful glowing arrow.08Action", "Laser cameraAction","PlaneAction")
 
-            placeModelOnButtonClick("models/Automatic_Levelling.glb", animations, R.raw.fall)
+            placeModelOnButtonClick("models/Automatic Levelling.glb", animations, R.raw.fall)
         }
 
         featureButton2.setOnClickListener {
-            val animations = listOf("Manual Operation 03 and 04 Intermediate", "Manual Operation 02", "Manual Operation 03",
-                "Manual Operation 04","Manual Operation 01","Manual Operation Always")
-            placeModelOnButtonClick("models/Manual_Operation.glb", animations, R.raw.battery_open)
+            val animations = listOf("Arrow 1Action.001", "PlaneAction.001")
+            placeModelOnButtonClick("models/Manual Operation.glb", animations, R.raw.battery_open)
+        }
+
+        featureButton3.setOnClickListener {
+            val animations = listOf("Arrow 1Action.003", "Laser cameraAction.002", "Plane.001Action")
+
+            placeModelOnButtonClick("models/Angle Selection.glb", animations, R.raw.fall)
+        }
+        featureButton4.setOnClickListener {
+            val animations = listOf("Arrow 1Action.002", "Laser cameraAction.001")
+
+            placeModelOnButtonClick("models/Rotational Operation.glb", animations, R.raw.fall)
         }
     }
 
@@ -79,7 +96,8 @@ class FeaturesActivity : AppCompatActivity() {
     private suspend fun loadViewRenderable() {
         try {
             modelView = ViewRenderable.builder()
-                .setView(this, R.layout.view_renderable_infos)
+                .setView(this, R.layout.auto_levelling)
+//                .setView(this,R.layout.manual_levelling)
                 .await()
         } catch (e: Exception) {
             Log.e("FeaturesActivity", "Error loading ViewRenderable", e)

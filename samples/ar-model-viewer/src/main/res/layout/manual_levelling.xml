@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="16dp"
+              android:background="@drawable/renderable_background">
+    
+    <!-- Image View for manual operation -->
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/manual_levelling"/>
+    
+    <!-- Description TextView for the image -->
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manual Operation"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:paddingTop="8dp" />
+    
+    <!-- Additional description for context -->
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manual operation allows you to control the equipment manually. It provides flexibility for the operator to adjust settings and operate the device as needed."
+            android:textColor="@android:color/black"
+            android:paddingTop="8dp" />
+</LinearLayout>
