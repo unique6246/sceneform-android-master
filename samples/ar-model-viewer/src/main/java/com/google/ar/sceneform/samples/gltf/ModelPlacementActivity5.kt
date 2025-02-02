@@ -1,5 +1,6 @@
 package com.google.ar.sceneform.samples.gltf
 
+import android.content.Intent
 import android.graphics.Point
 import android.media.MediaPlayer
 import android.net.Uri
@@ -25,6 +26,7 @@ import com.google.ar.sceneform.ux.TransformableNode
 import com.gorisse.thomas.sceneform.scene.await
 import kotlinx.coroutines.launch
 
+
 class ModelPlacementActivity5 : AppCompatActivity() {
     private lateinit var arFragment: ArFragment
     private lateinit var scaleGestureDetector: ScaleGestureDetector
@@ -39,6 +41,14 @@ class ModelPlacementActivity5 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
+        val prefs = getSharedPreferences("AppPrefs", MODE_PRIVATE)
+        val tutorialCompleted = prefs.getBoolean("TutorialCompleted", false)
+
+        if (!tutorialCompleted) {
+            startActivity(Intent(this, ModelPlacementTutorialActivity::class.java))
+            finish()
+            return
+        }
 
         arFragment = supportFragmentManager.findFragmentById(R.id.ux_fragment) as ArFragment
 
@@ -51,7 +61,7 @@ class ModelPlacementActivity5 : AppCompatActivity() {
 
         // Set animation buttons to trigger animations
         animateButton1.setOnClickListener {
-            val batteryLidAnimations = listOf("Closing LidAction", "Open Latch.001Action","Laser cameraAction","Battery  v6Action.002")
+            val batteryLidAnimations = listOf("Arrow 1Action.002", "Laser cameraAction.001","PlaneAction","Plane.001Action")
             allAnimations(batteryLidAnimations,R.raw.battery_open)
         }
 
@@ -122,7 +132,7 @@ class ModelPlacementActivity5 : AppCompatActivity() {
     private suspend fun loadModel() {
         try {
             modelRenderable = ModelRenderable.builder()
-                .setSource(this, Uri.parse("models/Battery Removal.glb")) // Load from assets
+                .setSource(this, Uri.parse("models/RO.glb")) // Load from assets
                 .setIsFilamentGltf(true)
                 .await()
 

@@ -30,6 +30,9 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/Theme.MyApplication">
+        <activity android:name=".ModelPlacementTutorialActivity"
+                  android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        
         <activity
                 android:name=".ToolsListActivity7"
                 android:exported="false" />

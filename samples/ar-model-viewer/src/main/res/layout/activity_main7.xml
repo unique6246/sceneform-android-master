@@ -75,6 +75,7 @@
     
     <!-- Language Section -->
     <LinearLayout
+            android:id="@+id/language_section"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView6"
@@ -145,6 +146,7 @@
     
     <!-- Contact Us Section -->
     <LinearLayout
+            android:id="@+id/contact_us_section"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView6"
@@ -175,6 +177,7 @@
     
     <!-- About Us Section -->
     <LinearLayout
+            android:id="@+id/about_us_section"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView6"
@@ -195,4 +198,81 @@
                 android:textColor="#192276"
                 android:textSize="20sp" />
     </LinearLayout>
+    <RelativeLayout
+            android:id="@+id/onboarding_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80000000"
+            android:visibility="visible">
+        
+        <!-- Highlights for various sections -->
+        <View
+                android:id="@+id/highlight_version_section"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/highlight_border"
+                android:visibility="gone"/>
+        
+        <View
+                android:id="@+id/highlight_language_section"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/highlight_version_section"
+                android:background="@drawable/highlight_border"
+                android:visibility="gone"/>
+        
+        <View
+                android:id="@+id/highlight_contact_us_section"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/highlight_language_section"
+                android:background="@drawable/highlight_border"
+                android:visibility="gone"/>
+        
+        <View
+                android:id="@+id/highlight_about_us_section"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/highlight_contact_us_section"
+                android:background="@drawable/highlight_border"
+                android:visibility="gone"/>
+        
+        <!-- Tutorial Text -->
+        <TextView
+                android:id="@+id/tutorial_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/highlight_version_section"
+                android:layout_centerHorizontal="true"
+                android:padding="16dp"
+                android:text="Welcome to the tutorial!"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        
+        <!-- Navigation Buttons -->
+        <Button
+                android:id="@+id/next_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="32dp"
+                android:text="Next"
+                android:background="@color/white"
+                android:textColor="@color/black"/>
+        
+        <Button
+                android:id="@+id/skip_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="16dp"
+                android:text="Skip"
+                android:background="@color/white"
+                android:textColor="@color/black"/>
+    </RelativeLayout>
 </RelativeLayout>

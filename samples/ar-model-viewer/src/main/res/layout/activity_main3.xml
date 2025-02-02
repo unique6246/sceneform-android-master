@@ -1,49 +1,30 @@
-    <RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#1D3A87">
-
-    <!-- Header section with Back, Bosch logo, and Settings -->
-
-    <!-- Place model in your environment button -->
-    <ImageButton
-        android:id="@+id/scan_button"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="100dp"
-        android:src="@drawable/group_2_2"
-        android:layout_height="80dp"
-        android:layout_width="145dp"
-        android:background="@drawable/group_2_2"/>
-<!--        android:text="scan"-->
-<!--        android:textColor="#FFFFFF" />-->
-
-    <!-- See model use cases button -->
-
-    <ImageButton
-        android:id="@+id/tools_button"
-        android:layout_width="145dp"
-        android:layout_height="80dp"
-        android:layout_below="@id/scan_button"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="69dp"
-        android:src="@drawable/group_3_2"
-        android:background="@drawable/group_3_2"/>
-<!--        android:text="tool"-->
-<!--        android:textColor="#FFFFFF" />-->
-    <ImageView
-        android:id="@+id/imageView4"
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        app:srcCompat="@drawable/boschtop" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="match_parent"
-        android:layout_height="16dp"
-        app:srcCompat="@drawable/bo" />
-        
+        android:layout_height="match_parent"
+        android:background="#1D3A87">
+    
+    <!-- Main Content -->
+    <ImageButton
+            android:id="@+id/scan_button"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/group_2_2"
+            android:layout_height="80dp"
+            android:layout_width="145dp"
+            android:background="@drawable/group_2_2"/>
+    
+    <ImageButton
+            android:id="@+id/tools_button"
+            android:layout_width="145dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/scan_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="69dp"
+            android:src="@drawable/group_3_2"
+            android:background="@drawable/group_3_2"/>
+    
     <Button
             android:id="@+id/settings_button"
             android:layout_width="60dp"
@@ -52,8 +33,90 @@
             android:layout_alignParentTop="true"
             android:layout_marginEnd="16dp"
             android:layout_marginTop="16dp"
-            android:alpha="0"
-            />
-
-
+            android:alpha="0"/>
+    <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/boschtop" />
+    
+    <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            app:srcCompat="@drawable/bo" />
+    
+    <!-- Onboarding Overlay -->
+    <RelativeLayout
+            android:id="@+id/onboarding_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80000000"
+            android:visibility="visible">
+        
+        <!-- Highlights -->
+        <View
+                android:id="@+id/highlight_scan_button"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/highlight_border"
+                android:visibility="gone"/>
+        
+        <View
+                android:id="@+id/highlight_tools_button"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="250dp"
+                android:background="@drawable/highlight_border"
+                android:visibility="gone"/>
+        
+        <View
+                android:id="@+id/highlight_settings_button"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/highlight_border"
+                android:visibility="gone"/>
+        
+        <!-- Tutorial Text -->
+        <TextView
+                android:id="@+id/tutorial_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/highlight_scan_button"
+                android:layout_centerHorizontal="true"
+                android:padding="16dp"
+                android:text="Welcome to the tutorial!"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        
+        <!-- Navigation Buttons -->
+        <Button
+                android:id="@+id/next_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="32dp"
+                android:text="Next"
+                android:background="@color/white"
+                android:textColor="@color/black"/>
+        
+        <Button
+                android:id="@+id/skip_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="16dp"
+                android:text="Skip"
+                android:background="@color/white"
+                android:textColor="@color/black"/>
     </RelativeLayout>
+</RelativeLayout>

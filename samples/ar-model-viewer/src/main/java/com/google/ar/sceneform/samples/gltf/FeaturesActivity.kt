@@ -52,7 +52,7 @@ class FeaturesActivity : AppCompatActivity() {
             loadModel("models/Man_levelling.glb")
             loadModel("models/Auto_levelling.glb")
             loadModel("models/Angle Selection.glb")
-            loadModel("models/Rotational Operation.glb")
+            loadModel("models/RO.glb")
 
 
             loadViewRenderable()
@@ -75,9 +75,9 @@ class FeaturesActivity : AppCompatActivity() {
             placeModelOnButtonClick("models/Angle Selection.glb", animations, R.raw.fall)
         }
         featureButton4.setOnClickListener {
-            val animations = listOf("Arrow 1Action.002", "Laser cameraAction.001")
+            val animations = listOf("Arrow 1Action.002", "Laser cameraAction.001","PlaneAction","Plane.001Action")
 
-            placeModelOnButtonClick("models/Rotational Operation.glb", animations, R.raw.fall)
+            placeModelOnButtonClick("models/RO.glb", animations, R.raw.fall)
         }
     }
 
