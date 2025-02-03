@@ -2,7 +2,9 @@
 <project version="4">
   <component name="AndroidLayouts">
     <shared>
-      <config />
+      <config>
+        <device id="_device_class_phone" />
+      </config>
     </shared>
     <layouts>
       <layout url="file://$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_features.xml">
@@ -50,6 +52,11 @@
           <theme>@style/Theme.MyApplication</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_model_placement_tutorial.xml">
+        <config>
+          <theme>@style/Theme.MyApplication</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_onboarding.xml">
         <config>
           <theme>@style/Theme.MyApplication</theme>
@@ -82,19 +89,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d325f4c-ca96-4ca1-9de7-e7e27a373ba0" name="Changes" comment="3d model integrate">
-      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/assets/models/BR.glb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/assets/models/RO.glb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/FeaturesActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/FeaturesActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/ModelPlacementActivity5.kt" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/ModelPlacementActivity5.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_onboarding.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_onboarding.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +112,7 @@
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[10BDAJ0MBK000N1]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=PhysicalDevice, isTemplate=false, identifier=serial=10BDAJ0MBK000N1)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -152,6 +160,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -160,12 +173,12 @@
     &quot;assignee&quot;: &quot;unique6246&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/unique6246/sceneform-android-master.git&quot;,
-    &quot;accountId&quot;: &quot;f1dbbd0d-30d8-475b-b887-bf250b9c0197&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/unique6246/sceneform-android-master.git",
+    "accountId": "f7768706-8e97-41b7-9d84-73f25a538143"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 3
@@ -196,7 +209,7 @@
     "android-custom-viewC:/Users/prave/OneDrive/Desktop/sceneform-android-master/core/src/main/java/com/google/ar/sceneform/SceneView.java_SELECTED": "SceneView",
     "android-custom-viewC:/Users/prave/OneDrive/Desktop/sceneform-android-master/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/ui/OverlayView.kt_SELECTED": "OverlayView",
     "android-custom-viewC:/Users/prave/OneDrive/Desktop/sceneform-android-master/samples/environment-lights/src/main/java/com/google/ar/sceneform/samples/environmentlights/Extensions.kt_SELECTED": "FitsSystemWindowsConstraintLayout",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "ui",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/prave/OneDrive/Desktop/sceneform-android-master/samples/ar-model-viewer/src/main/assets/models",
     "node.js.detected.package.eslint": "true",
@@ -210,9 +223,6 @@
   "keyToStringList": {
     "android.recentlyUsedThemes": [
       "Base.Theme.MyApplication"
-    ],
-    "kotlin-gradle-user-dirs": [
-      "C:\\Users\\prave\\.gradle"
     ]
   }
 }]]></component>
@@ -253,7 +263,6 @@
       <option name="MODE" value="default_activity" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
       <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
       <option name="DEBUGGER_TYPE" value="Java" />
       <Java>
@@ -291,7 +300,6 @@
       <option name="MODE" value="default_activity" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
       <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
       <option name="DEBUGGER_TYPE" value="Java" />
       <Java>
@@ -329,7 +337,6 @@
       <option name="MODE" value="default_activity" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
       <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
       <option name="DEBUGGER_TYPE" value="Java" />
       <Java>
@@ -367,7 +374,6 @@
       <option name="MODE" value="default_activity" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
       <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
       <option name="DEBUGGER_TYPE" value="Java" />
       <Java>
@@ -405,7 +411,6 @@
       <option name="MODE" value="default_activity" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
       <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
       <option name="DEBUGGER_TYPE" value="Java" />
       <Java>
@@ -443,7 +448,6 @@
       <option name="MODE" value="default_activity" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
       <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
       <option name="DEBUGGER_TYPE" value="Java" />
       <Java>
@@ -481,7 +485,6 @@
       <option name="MODE" value="default_activity" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
       <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
       <option name="DEBUGGER_TYPE" value="Java" />
       <Java>
@@ -519,7 +522,6 @@
       <option name="MODE" value="default_activity" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
       <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
       <option name="DEBUGGER_TYPE" value="Java" />
       <Java>
@@ -569,14 +571,6 @@
         <item itemvalue="Gradle.sceneform-android-master [dependencies]" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.19416.15" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.19416.15" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

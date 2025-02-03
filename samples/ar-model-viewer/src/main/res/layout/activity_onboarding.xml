@@ -16,37 +16,40 @@
             android:visibility="visible">
         
         <!-- Highlight ImageButton -->
+
+        <!-- Tutorial Text -->
+
+        <!-- Skip Button -->
         <View
                 android:id="@+id/highlight_imagebutton"
                 android:layout_width="150dp"
                 android:layout_height="80dp"
-                android:layout_centerHorizontal="true"
                 android:layout_alignParentBottom="true"
-                android:background="@drawable/highlight_border" />
-        
-        <!-- Tutorial Text -->
+                android:background="@drawable/highlight_border" android:layout_marginBottom="119dp"
+                android:layout_alignParentEnd="true" android:layout_marginEnd="134dp"
+                android:layout_alignParentStart="true" android:layout_marginStart="127dp"/>
         <TextView
                 android:id="@+id/tutorial_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_above="@id/highlight_imagebutton"
-                android:layout_centerHorizontal="true"
                 android:padding="16dp"
                 android:text="Tap here to start experiencing the app!"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
-                android:textStyle="bold" />
-        
-        <!-- Skip Button -->
+                android:textStyle="bold" android:layout_marginBottom="132dp" android:layout_alignParentEnd="true"
+                android:layout_marginEnd="36dp"/>
         <Button
                 android:id="@+id/skip_button"
-                android:layout_width="wrap_content"
+                android:layout_width="103dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_margin="16dp"
                 android:text="Skip"
                 android:background="@color/white"
-                android:textColor="@color/black" />
+                android:textColor="@color/black" android:layout_marginTop="797dp" android:layout_marginStart="297dp"
+                android:layout_marginEnd="11dp" android:layout_marginBottom="16dp"
+                android:layout_alignParentStart="true" android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"/>
     </RelativeLayout>
 </FrameLayout>

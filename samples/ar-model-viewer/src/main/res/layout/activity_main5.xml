@@ -64,40 +64,39 @@
             android:visibility="visible">
         
         <!-- Highlights -->
+
+        <!-- Tutorial Text -->
+
+        <!-- Navigation Buttons -->
         <View
                 android:id="@+id/highlight_place_button"
                 android:layout_width="325dp"
                 android:layout_height="80dp"
-                android:layout_centerInParent="true"
-                android:layout_marginTop="100dp"
                 android:background="@drawable/highlight_border"
-                android:visibility="gone"/>
-        
+                android:visibility="visible" android:layout_marginTop="63dp"
+                android:layout_below="@+id/tutorial_text" android:layout_alignParentEnd="true"
+                android:layout_marginEnd="42dp"/>
         <View
                 android:id="@+id/highlight_model_button"
                 android:layout_width="255dp"
                 android:layout_height="102dp"
-                android:layout_below="@id/place_button"
                 android:layout_marginStart="102dp"
-                android:layout_marginTop="93dp"
                 android:layout_marginEnd="95dp"
                 android:background="@drawable/highlight_border"
-                android:visibility="gone"/>
-        
-        <!-- Tutorial Text -->
+                android:visibility="visible" android:layout_marginTop="235dp"
+                android:layout_below="@+id/tutorial_text"/>
         <TextView
                 android:id="@+id/tutorial_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_above="@id/highlight_place_button"
-                android:layout_centerHorizontal="true"
                 android:padding="16dp"
                 android:text="Welcome to the tutorial!"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
-                android:textStyle="bold"/>
-        
-        <!-- Navigation Buttons -->
+                android:textStyle="bold" android:layout_alignParentEnd="true"
+                android:layout_marginEnd="94dp" android:layout_alignParentStart="true"
+                android:layout_marginStart="93dp" android:layout_marginTop="290dp"
+                android:layout_alignParentTop="true"/>
         <Button
                 android:id="@+id/next_button"
                 android:layout_width="wrap_content"
@@ -108,16 +107,17 @@
                 android:text="Next"
                 android:background="@color/white"
                 android:textColor="@color/black"/>
-        
+
         <Button
                 android:id="@+id/skip_button"
-                android:layout_width="wrap_content"
+                android:layout_width="89dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_margin="16dp"
                 android:text="Skip"
                 android:background="@color/white"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black" android:layout_alignParentStart="true"
+                android:layout_marginStart="284dp" android:layout_marginLeft="16dp" android:layout_marginTop="810dp"
+                android:layout_marginRight="16dp" android:layout_marginEnd="38dp" android:layout_marginBottom="16dp"/>
     </RelativeLayout>
 </RelativeLayout>
