@@ -1,5 +1,6 @@
 package com.google.ar.sceneform.samples.gltf
 
+import android.content.Intent
 import android.graphics.Point
 import android.media.MediaPlayer
 import android.net.Uri
@@ -38,7 +39,14 @@ class FeaturesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_features)
+        val prefs = getSharedPreferences("AppPrefs", MODE_PRIVATE)
+        val tutorialCompleted = prefs.getBoolean("TutorialCompleted", false)
 
+        if (!tutorialCompleted) {
+            startActivity(Intent(this, ModelPlacementTutorialActivity::class.java))
+            finish()
+            return
+        }
         arFragment = supportFragmentManager.findFragmentById(R.id.ux_fragment) as ArFragment
 
         val featureButton1: Button = findViewById(R.id.feature_button_1)

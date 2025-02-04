@@ -70,19 +70,19 @@
         <!-- Navigation Buttons -->
         <View
                 android:id="@+id/highlight_place_button"
-                android:layout_width="325dp"
-                android:layout_height="80dp"
-                android:background="@drawable/highlight_border"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/arrow"
                 android:visibility="visible" android:layout_marginTop="63dp"
                 android:layout_below="@+id/tutorial_text" android:layout_alignParentEnd="true"
                 android:layout_marginEnd="42dp"/>
         <View
                 android:id="@+id/highlight_model_button"
-                android:layout_width="255dp"
-                android:layout_height="102dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_marginStart="102dp"
                 android:layout_marginEnd="95dp"
-                android:background="@drawable/highlight_border"
+                android:background="@drawable/arrow"
                 android:visibility="visible" android:layout_marginTop="235dp"
                 android:layout_below="@+id/tutorial_text"/>
         <TextView

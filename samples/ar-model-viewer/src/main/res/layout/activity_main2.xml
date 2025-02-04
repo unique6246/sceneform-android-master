@@ -36,11 +36,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/open_lid_animation"/>
         
-<!--        <Button-->
-<!--                android:text="@string/fall_animation"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:id="@+id/animate_button2"/>-->
+
         
     </LinearLayout>
 

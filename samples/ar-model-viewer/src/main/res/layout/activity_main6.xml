@@ -79,22 +79,24 @@
         <!-- Navigation Buttons -->
         <View
                 android:id="@+id/highlight_features_button"
-                android:layout_width="255dp"
-                android:layout_height="82dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_marginEnd="110dp"
-                android:background="@drawable/highlight_border"
-                android:visibility="visible" android:layout_marginTop="282dp"
-                android:layout_below="@+id/tutorial_text" android:layout_alignParentStart="true"
-                android:layout_marginStart="94dp" android:layout_alignParentEnd="true"/>
+                android:background="@drawable/arrow"
+                android:visibility="visible"
+                android:layout_marginTop="282dp"
+                android:layout_below="@+id/tutorial_text"
+                android:layout_alignParentEnd="true"/>
         <View
                 android:id="@+id/highlight_use_cases_button"
-                android:layout_width="242dp"
-                android:layout_height="75dp"
-                android:layout_marginStart="55dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_marginEnd="100dp"
-                android:background="@drawable/highlight_border"
-                android:visibility="visible" android:layout_marginTop="69dp"
-                android:layout_below="@+id/tutorial_text" android:layout_alignParentStart="true"/>
+                android:background="@drawable/arrow"
+                android:visibility="visible"
+                android:layout_marginTop="69dp"
+                android:layout_below="@+id/tutorial_text"
+                android:layout_alignParentEnd="true"/>
         <TextView
                 android:id="@+id/tutorial_text"
                 android:layout_width="wrap_content"
