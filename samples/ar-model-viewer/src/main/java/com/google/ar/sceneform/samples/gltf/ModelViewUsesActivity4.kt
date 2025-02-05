@@ -14,7 +14,6 @@ class ModelViewUsesActivity4 : AppCompatActivity() {
 
     private lateinit var onboardingOverlay: View
     private lateinit var tutorialText: TextView
-    private lateinit var nextButton: Button
     private lateinit var skipButton: Button
     private var tutorialStep = 0
 
@@ -24,14 +23,12 @@ class ModelViewUsesActivity4 : AppCompatActivity() {
         setContentView(R.layout.activity_main5)
 
         val placeButton = findViewById<ImageButton>(R.id.place_button)
-        val modelButton = findViewById<ImageButton>(R.id.model_button)
         val homeButton = findViewById<Button>(R.id.home_button)
         val settingsButton = findViewById<Button>(R.id.settings_button)
 
         // Onboarding elements
         onboardingOverlay = findViewById(R.id.onboarding_overlay)
         tutorialText = findViewById(R.id.tutorial_text)
-        nextButton = findViewById(R.id.next_button)
         skipButton = findViewById(R.id.skip_button)
 
         val sharedPreferences: SharedPreferences = getSharedPreferences("AppPrefs", MODE_PRIVATE)
@@ -43,11 +40,6 @@ class ModelViewUsesActivity4 : AppCompatActivity() {
             showTutorialStep()
         }
 
-        // Tutorial navigation
-        nextButton.setOnClickListener {
-            tutorialStep++
-            showTutorialStep()
-        }
 
         // Skip tutorial
         skipButton.setOnClickListener {
@@ -58,11 +50,6 @@ class ModelViewUsesActivity4 : AppCompatActivity() {
         // Button listeners
         placeButton.setOnClickListener {
             val intent = Intent(this, ModelPlacementActivity5::class.java)
-            startActivity(intent)
-        }
-
-        modelButton.setOnClickListener {
-            val intent = Intent(this, ModelUseCasesActivity6::class.java)
             startActivity(intent)
         }
 
@@ -82,14 +69,10 @@ class ModelViewUsesActivity4 : AppCompatActivity() {
             0 -> {
                 tutorialText.text = "Tap here to place a 3D model in your environment!"
                 findViewById<View>(R.id.highlight_place_button).visibility = View.VISIBLE
-                findViewById<View>(R.id.highlight_model_button).visibility = View.GONE
+//                findViewById<View>(R.id.highlight_model_button).visibility = View.GONE
             }
+
             1 -> {
-                tutorialText.text = "Tap here to explore the model use cases!"
-                findViewById<View>(R.id.highlight_place_button).visibility = View.GONE
-                findViewById<View>(R.id.highlight_model_button).visibility = View.VISIBLE
-            }
-            2 -> {
                 onboardingOverlay.visibility = View.GONE
                 saveFirstLaunchPreference()
             }

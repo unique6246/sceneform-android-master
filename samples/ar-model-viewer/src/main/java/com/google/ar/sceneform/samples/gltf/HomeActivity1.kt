@@ -29,7 +29,7 @@ class HomeActivity1 : AppCompatActivity() {
         // When user clicks tutorial button
         second.setOnClickListener {
             onboardingOverlay.visibility = View.GONE
-            val intent = Intent(this, ScanToolActivity2::class.java)
+            val intent = Intent(this, ModelViewUsesActivity4::class.java)
             startActivity(intent)
             saveFirstLaunchPreference()
         }

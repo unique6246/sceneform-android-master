@@ -23,11 +23,9 @@
                 android:layout_height="50dp"
                 android:src="@drawable/arrow"
                 android:scaleType="fitCenter"
-                android:layout_below="@id/button"
-                app:layout_constraintBottom_toTopOf="@id/button"
-                app:layout_constraintStart_toStartOf="@id/button"
-                app:layout_constraintEnd_toEndOf="@id/button"
-                tools:ignore="NotSibling"/>
+                android:layout_above="@id/button"
+                tools:ignore="MissingConstraints,NotSibling"
+                android:contentDescription="TODO"/>
         
         <!-- Tutorial Text -->
         <TextView
@@ -49,8 +47,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Skip"
-                android:background="@android:color/white"
-                android:textColor="@android:color/black"
+                android:shadowColor="@color/blue"
+                android:background="@drawable/rounded_button"
+                android:textColor="@android:color/white"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_margin="16dp"/>

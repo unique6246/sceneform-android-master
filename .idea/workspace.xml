@@ -77,6 +77,11 @@
           <theme>@style/Theme.MyApplication</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/tutorial_overlay.xml">
+        <config>
+          <theme>@style/Theme.MyApplication</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/view_renderable_infos.xml">
         <config>
           <theme>@style/Theme.MyApplication</theme>
@@ -88,9 +93,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d325f4c-ca96-4ca1-9de7-e7e27a373ba0" name="Changes" comment="tutorials">
-      <change afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/drawable/arrow.png" afterDir="false" />
+    <list default="true" id="2d325f4c-ca96-4ca1-9de7-e7e27a373ba0" name="Changes" comment="Arrow tutorials">
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/drawable/imgg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/drawable/rounded_button.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/tutorial_overlay.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/values-night/colors.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.lock" afterDir="false" />
@@ -99,71 +106,24 @@
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/intermediates/compiled_local_resources/debug/out/drawable_sceneform_plane.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/intermediates/compiled_local_resources/debug/out/drawable_sceneform_plane.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/intermediates/compiled_local_resources/debug/out/raw_ar_environment_material_depth.filamat.flat" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/intermediates/compiled_local_resources/debug/out/raw_ar_environment_material_depth.filamat.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/intermediates/compiled_local_resources/debug/out/raw_ar_environment_material_flat.filamat.flat" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/intermediates/compiled_local_resources/debug/out/raw_ar_environment_material_flat.filamat.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/intermediates/compiled_local_resources/debug/out/raw_sceneform_camera_material.filamat.flat" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/intermediates/compiled_local_resources/debug/out/raw_sceneform_camera_material.filamat.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/intermediates/compiled_local_resources/debug/out/raw_sceneform_default_light_probe.sfb.flat" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/intermediates/compiled_local_resources/debug/out/raw_sceneform_default_light_probe.sfb.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/intermediates/compiled_local_resources/debug/out/raw_sceneform_opaque_colored_material.filamat.flat" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/intermediates/compiled_local_resources/debug/out/raw_sceneform_opaque_colored_material.filamat.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/intermediates/compiled_local_resources/debug/out/raw_sceneform_opaque_textured_material.filamat.flat" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/intermediates/compiled_local_resources/debug/out/raw_sceneform_opaque_textured_material.filamat.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/intermediates/compiled_local_resources/debug/out/raw_sceneform_plane_material.filamat.flat" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/intermediates/compiled_local_resources/debug/out/raw_sceneform_plane_material.filamat.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/intermediates/compiled_local_resources/debug/out/raw_sceneform_plane_shadow_material.filamat.flat" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/intermediates/compiled_local_resources/debug/out/raw_sceneform_plane_shadow_material.filamat.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/intermediates/compiled_local_resources/debug/out/raw_sceneform_transparent_colored_material.filamat.flat" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/intermediates/compiled_local_resources/debug/out/raw_sceneform_transparent_colored_material.filamat.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/intermediates/compiled_local_resources/debug/out/raw_sceneform_transparent_textured_material.filamat.flat" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/intermediates/compiled_local_resources/debug/out/raw_sceneform_transparent_textured_material.filamat.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/intermediates/compiled_local_resources/debug/out/raw_sceneform_view_material.filamat.flat" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/intermediates/compiled_local_resources/debug/out/raw_sceneform_view_material.filamat.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/intermediates/incremental/debug/packageDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/intermediates/incremental/debug/packageDebugResources/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/intermediates/incremental/mergeDebugShaders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/intermediates/incremental/packageDebugAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/intermediates/incremental/packageDebugAssets/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileDebugKotlin/cacheable/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileDebugKotlin/cacheable/last-build.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/kotlin/compileDebugKotlin/localstate/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/kotlin/compileDebugKotlin/localstate/build-history.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/assets/models/Battery Removal.glb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/assets/models/Rotational Operation.glb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/FeaturesActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/FeaturesActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/ScanningActivity3.kt" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/ScanningActivity3.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/HomeActivity1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/HomeActivity1.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/ModelPlacementActivity5.kt" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/ModelPlacementActivity5.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/ModelPlacementTutorialActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/ModelPlacementTutorialActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/ModelViewUsesActivity4.kt" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/ModelViewUsesActivity4.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/ScanToolActivity2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/ScanToolActivity2.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_main6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_model_placement_tutorial.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_model_placement_tutorial.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_onboarding.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/layout/activity_onboarding.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sceneform/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sceneform/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sceneform/build/intermediates/incremental/debug/packageDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sceneform/build/intermediates/incremental/debug/packageDebugResources/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sceneform/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sceneform/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sceneform/build/intermediates/incremental/mergeDebugShaders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sceneform/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sceneform/build/intermediates/incremental/packageDebugAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sceneform/build/intermediates/incremental/packageDebugAssets/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sceneform/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sceneform/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sceneform/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sceneform/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ux/build/intermediates/compiled_local_resources/debug/out/drawable-xxxhdpi-v4_sceneform_fit_to_scan.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/ux/build/intermediates/compiled_local_resources/debug/out/drawable-xxxhdpi-v4_sceneform_fit_to_scan.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ux/build/intermediates/compiled_local_resources/debug/out/drawable_sceneform_hand_phone.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/ux/build/intermediates/compiled_local_resources/debug/out/drawable_sceneform_hand_phone.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ux/build/intermediates/compiled_local_resources/debug/out/layout_sceneform_instructions_augmented_image.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/ux/build/intermediates/compiled_local_resources/debug/out/layout_sceneform_instructions_augmented_image.xml.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ux/build/intermediates/compiled_local_resources/debug/out/layout_sceneform_instructions_plane_discovery.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/ux/build/intermediates/compiled_local_resources/debug/out/layout_sceneform_instructions_plane_discovery.xml.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ux/build/intermediates/compiled_local_resources/debug/out/layout_sceneform_ux_fragment_layout.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/ux/build/intermediates/compiled_local_resources/debug/out/layout_sceneform_ux_fragment_layout.xml.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ux/build/intermediates/compiled_local_resources/debug/out/raw_external_chroma_key_video_material.filamat.flat" beforeDir="false" afterPath="$PROJECT_DIR$/ux/build/intermediates/compiled_local_resources/debug/out/raw_external_chroma_key_video_material.filamat.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ux/build/intermediates/compiled_local_resources/debug/out/raw_external_plain_video_material.filamat.flat" beforeDir="false" afterPath="$PROJECT_DIR$/ux/build/intermediates/compiled_local_resources/debug/out/raw_external_plain_video_material.filamat.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ux/build/intermediates/compiled_local_resources/debug/out/raw_sceneform_face_mesh_material.filamat.flat" beforeDir="false" afterPath="$PROJECT_DIR$/ux/build/intermediates/compiled_local_resources/debug/out/raw_sceneform_face_mesh_material.filamat.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ux/build/intermediates/compiled_local_resources/debug/out/raw_sceneform_face_mesh_occluder_material.filamat.flat" beforeDir="false" afterPath="$PROJECT_DIR$/ux/build/intermediates/compiled_local_resources/debug/out/raw_sceneform_face_mesh_occluder_material.filamat.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ux/build/intermediates/compiled_local_resources/debug/out/raw_sceneform_footprint.glb.flat" beforeDir="false" afterPath="$PROJECT_DIR$/ux/build/intermediates/compiled_local_resources/debug/out/raw_sceneform_footprint.glb.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ux/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ux/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ux/build/intermediates/incremental/debug/packageDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ux/build/intermediates/incremental/debug/packageDebugResources/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ux/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ux/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ux/build/intermediates/incremental/mergeDebugShaders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ux/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ux/build/intermediates/incremental/packageDebugAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ux/build/intermediates/incremental/packageDebugAssets/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ux/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ux/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ux/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ux/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ux/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/ux/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ar-model-viewer/src/main/res/values/colors.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,9 +163,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="valueResourceFile" />
         <option value="resourceFile" />
         <option value="layoutResourceFile" />
+        <option value="valueResourceFile" />
       </list>
     </option>
   </component>
@@ -240,6 +200,10 @@
     &quot;accountId&quot;: &quot;f1dbbd0d-30d8-475b-b887-bf250b9c0197&quot;
   }
 }</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 3
@@ -253,50 +217,53 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Android App.sample-3d-model-viewer.executor&quot;: &quot;Run&quot;,
-    &quot;Android App.sample-ar-model-viewer-java.executor&quot;: &quot;Run&quot;,
-    &quot;Android App.sample-ar-model-viewer.executor&quot;: &quot;Run&quot;,
-    &quot;Android App.sample-augmented-faces.executor&quot;: &quot;Run&quot;,
-    &quot;Android App.sample-augmented-images.executor&quot;: &quot;Run&quot;,
-    &quot;Android App.sample-depth.executor&quot;: &quot;Run&quot;,
-    &quot;Android App.sample-environment-lights.executor&quot;: &quot;Run&quot;,
-    &quot;Android App.sample-video-texture.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.sceneform-android-master [dependencies].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;android-custom-viewC:/Users/prave/OneDrive/Desktop/sceneform-android-master/core/src/main/java/com/google/ar/sceneform/SceneView.java_SELECTED&quot;: &quot;SceneView&quot;,
-    &quot;android-custom-viewC:/Users/prave/OneDrive/Desktop/sceneform-android-master/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/ui/OverlayView.kt_SELECTED&quot;: &quot;OverlayView&quot;,
-    &quot;android-custom-viewC:/Users/prave/OneDrive/Desktop/sceneform-android-master/samples/environment-lights/src/main/java/com/google/ar/sceneform/samples/environmentlights/Extensions.kt_SELECTED&quot;: &quot;FitsSystemWindowsConstraintLayout&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;ui&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/prave/OneDrive/Desktop/sceneform-android-master/samples/ar-model-viewer/src/main/res/drawable&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Android App.sample-3d-model-viewer.executor": "Run",
+    "Android App.sample-ar-model-viewer-java.executor": "Run",
+    "Android App.sample-ar-model-viewer.executor": "Run",
+    "Android App.sample-augmented-faces.executor": "Run",
+    "Android App.sample-augmented-images.executor": "Run",
+    "Android App.sample-depth.executor": "Run",
+    "Android App.sample-environment-lights.executor": "Run",
+    "Android App.sample-video-texture.executor": "Run",
+    "Gradle.sceneform-android-master [dependencies].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "android-custom-viewC:/Users/prave/OneDrive/Desktop/sceneform-android-master/core/src/main/java/com/google/ar/sceneform/SceneView.java_SELECTED": "SceneView",
+    "android-custom-viewC:/Users/prave/OneDrive/Desktop/sceneform-android-master/samples/ar-model-viewer/src/main/java/com/google/ar/sceneform/samples/gltf/ui/OverlayView.kt_SELECTED": "OverlayView",
+    "android-custom-viewC:/Users/prave/OneDrive/Desktop/sceneform-android-master/samples/environment-lights/src/main/java/com/google/ar/sceneform/samples/environmentlights/Extensions.kt_SELECTED": "FitsSystemWindowsConstraintLayout",
+    "git-widget-placeholder": "ui",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/prave/OneDrive/Desktop/sceneform-android-master/samples/ar-model-viewer/src/main/res/values-night",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;android.recentlyUsedThemes&quot;: [
-      &quot;Base.Theme.MyApplication&quot;
+  "keyToStringList": {
+    "android.recentlyUsedThemes": [
+      "Base.Theme.MyApplication"
     ],
-    &quot;kotlin-gradle-user-dirs&quot;: [
-      &quot;C:\\Users\\prave\\.gradle&quot;
+    "kotlin-gradle-user-dirs": [
+      "C:\\Users\\prave\\.gradle"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\prave\OneDrive\Desktop\sceneform-android-master\samples\ar-model-viewer\src\main\res\values-night" />
       <recent name="C:\Users\prave\OneDrive\Desktop\sceneform-android-master\samples\ar-model-viewer\src\main\res\drawable" />
       <recent name="C:\Users\prave\OneDrive\Desktop\sceneform-android-master\samples\ar-model-viewer\src\main\assets\models" />
       <recent name="C:\Users\prave\OneDrive\Desktop\sceneform-android-master\samples\ar-model-viewer\src\main\assets" />
       <recent name="C:\Users\prave\OneDrive\Desktop\sceneform-android-master\samples\ar-model-viewer\src\main\res" />
-      <recent name="C:\Users\prave\OneDrive\Desktop\sceneform-android-master\samples\ar-model-viewer\src\main\res\layout" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\prave\OneDrive\Desktop\sceneform-android-master\samples\ar-model-viewer\src\main\res\layout" />
@@ -698,7 +665,9 @@
       <workItem from="1738065491450" duration="5250000" />
       <workItem from="1738497856757" duration="1391000" />
       <workItem from="1738568840975" duration="105000" />
-      <workItem from="1738648086198" duration="4378000" />
+      <workItem from="1738648086198" duration="8387000" />
+      <workItem from="1738733041935" duration="24648000" />
+      <workItem from="1738777341528" duration="2737000" />
     </task>
     <task id="LOCAL-00001" summary="setup">
       <option name="closed" value="true" />
@@ -756,7 +725,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738070112038</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Arrow tutorials">
+      <option name="closed" value="true" />
+      <created>1738678313647</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1738678313648</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -770,6 +747,7 @@
     <MESSAGE value="animations" />
     <MESSAGE value="only app" />
     <MESSAGE value="3d model integrate" />
-    <option name="LAST_COMMIT_MESSAGE" value="3d model integrate" />
+    <MESSAGE value="Arrow tutorials" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arrow tutorials" />
   </component>
 </project>

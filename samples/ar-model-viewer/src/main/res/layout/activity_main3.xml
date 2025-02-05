@@ -15,15 +15,15 @@
             android:layout_width="145dp"
             android:background="@drawable/group_2_2"/>
     
-    <ImageButton
-            android:id="@+id/tools_button"
-            android:layout_width="145dp"
-            android:layout_height="80dp"
-            android:layout_below="@id/scan_button"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="69dp"
-            android:src="@drawable/group_3_2"
-            android:background="@drawable/group_3_2"/>
+<!--    <ImageButton-->
+<!--            android:id="@+id/tools_button"-->
+<!--            android:layout_width="145dp"-->
+<!--            android:layout_height="80dp"-->
+<!--            android:layout_below="@id/scan_button"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="69dp"-->
+<!--            android:src="@drawable/group_3_2"-->
+<!--            android:background="@drawable/group_3_2"/>-->
     
     <Button
             android:id="@+id/settings_button"
@@ -66,25 +66,25 @@
                 android:layout_marginEnd="128dp"
                 android:layout_marginTop="108dp"
                 android:layout_below="@+id/tutorial_text"/>
-        <View
-                android:id="@+id/highlight_tools_button"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="257dp"
-                android:background="@drawable/arrow"
-                android:visibility="visible"
-                android:layout_marginEnd="128dp"
-                android:layout_alignParentEnd="true"
-                android:layout_below="@+id/tutorial_text"/>
-        <View
-                android:id="@+id/highlight_settings_button"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="0dp"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/arrow"
-                android:visibility="visible"/>
+<!--        <View-->
+<!--                android:id="@+id/highlight_tools_button"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginTop="257dp"-->
+<!--                android:background="@drawable/arrow"-->
+<!--                android:visibility="visible"-->
+<!--                android:layout_marginEnd="128dp"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_below="@+id/tutorial_text"/>-->
+<!--        <View-->
+<!--                android:id="@+id/highlight_settings_button"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_marginEnd="0dp"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:background="@drawable/arrow"-->
+<!--                android:visibility="visible"/>-->
 
         <!-- Tutorial Text -->
 
