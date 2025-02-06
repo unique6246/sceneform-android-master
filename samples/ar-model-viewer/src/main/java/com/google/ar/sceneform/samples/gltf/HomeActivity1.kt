@@ -21,10 +21,12 @@ class HomeActivity1 : AppCompatActivity() {
         // SharedPreferences to track first-time launch
         val sharedPreferences: SharedPreferences = getSharedPreferences("AppPrefs", MODE_PRIVATE)
         val isFirstLaunch = sharedPreferences.getBoolean("isFirstLaunch", true)
-
-        if (!isFirstLaunch) {
-            onboardingOverlay.visibility = View.GONE // Hide overlay if already seen
+        if (isFirstLaunch) {
+            onboardingOverlay.visibility = View.VISIBLE // Show tutorial if reset
+        } else {
+            onboardingOverlay.visibility = View.GONE
         }
+
 
         // When user clicks tutorial button
         second.setOnClickListener {

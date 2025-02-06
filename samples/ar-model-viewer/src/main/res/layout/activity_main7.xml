@@ -198,81 +198,28 @@
                 android:textColor="#192276"
                 android:textSize="20sp" />
     </LinearLayout>
-    <RelativeLayout
-            android:id="@+id/onboarding_overlay"
+    <LinearLayout
+            android:id="@+id/reset_tutorial_button"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#80000000"
-            android:visibility="gone">
-
-        <!-- Highlights for various sections -->
-
-        <View
-                android:id="@+id/highlight_version_section"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="130dp"
-                android:background="@drawable/highlight_border"
-                android:visibility="visible"/>
-        <View
-                android:id="@+id/highlight_language_section"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_below="@id/highlight_version_section"
-                android:background="@drawable/highlight_border"
-                android:visibility="gone"/>
-
-        <View
-                android:id="@+id/highlight_contact_us_section"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_below="@id/highlight_language_section"
-                android:background="@drawable/highlight_border"
-                android:visibility="gone"/>
-
-        <View
-                android:id="@+id/highlight_about_us_section"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_below="@id/highlight_contact_us_section"
-                android:background="@drawable/highlight_border"
-                android:visibility="gone"/>
-
-        <!-- Tutorial Text -->
-
-        <!-- Navigation Buttons -->
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView6"
+            android:layout_marginTop="350dp"
+            android:background="#d6dbe8"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="resetTutorial"
+            android:orientation="horizontal"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="12dp">
+        
         <TextView
-                android:id="@+id/tutorial_text"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:padding="16dp"
-                android:text="Welcome to the tutorial!"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp"
-                android:textStyle="bold" android:layout_marginTop="514dp" android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true" android:layout_marginEnd="95dp"/>
-        <Button
-                android:id="@+id/next_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="32dp"
-                android:text="Next"
-                android:background="@color/white"
-                android:textColor="@color/black"/>
+                android:layout_weight="1"
+                android:text="Reset Tutorial"
+                android:textColor="#192276"
+                android:textSize="20sp" />
+    </LinearLayout>
 
-        <Button
-                android:id="@+id/skip_button"
-                android:layout_width="93dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:text="Skip"
-                android:background="@color/white"
-                android:textColor="@color/black" android:layout_alignParentStart="true"
-                android:layout_marginStart="311dp" android:layout_marginLeft="16dp" android:layout_marginTop="810dp"
-                android:layout_marginRight="16dp" android:layout_marginEnd="7dp" android:layout_marginBottom="16dp"/>
-    </RelativeLayout>
+
 </RelativeLayout>

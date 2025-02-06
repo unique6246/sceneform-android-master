@@ -33,12 +33,13 @@ class ModelViewUsesActivity4 : AppCompatActivity() {
 
         val sharedPreferences: SharedPreferences = getSharedPreferences("AppPrefs", MODE_PRIVATE)
         val isFirstLaunch = sharedPreferences.getBoolean("isFirstLaunch_ModelView", true)
-
-        if (!isFirstLaunch) {
-            onboardingOverlay.visibility = View.GONE // Hide overlay if already seen
-        } else {
+        if (isFirstLaunch) {
+            onboardingOverlay.visibility = View.VISIBLE // Show tutorial if reset
             showTutorialStep()
+        } else {
+            onboardingOverlay.visibility = View.GONE
         }
+
 
 
         // Skip tutorial
@@ -69,9 +70,7 @@ class ModelViewUsesActivity4 : AppCompatActivity() {
             0 -> {
                 tutorialText.text = "Tap here to place a 3D model in your environment!"
                 findViewById<View>(R.id.highlight_place_button).visibility = View.VISIBLE
-//                findViewById<View>(R.id.highlight_model_button).visibility = View.GONE
             }
-
             1 -> {
                 onboardingOverlay.visibility = View.GONE
                 saveFirstLaunchPreference()

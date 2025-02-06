@@ -5,17 +5,19 @@ import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import android.view.ViewGroup
-import android.widget.*
+import android.widget.Button
+import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.ar.core.Plane
 import com.google.ar.sceneform.AnchorNode
+import com.google.ar.sceneform.math.Vector3
 import com.google.ar.sceneform.rendering.ModelRenderable
 import com.google.ar.sceneform.ux.ArFragment
 import com.google.ar.sceneform.ux.TransformableNode
 import com.gorisse.thomas.sceneform.scene.await
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 class ModelPlacementActivity5 : AppCompatActivity() {
@@ -28,11 +30,11 @@ class ModelPlacementActivity5 : AppCompatActivity() {
     private var fabOpened = false
 
     private val models = mapOf(
-        "Automatic Levelling" to Pair("models/Automatic Levelling.glb", listOf("Colorful glowing arrow.08Action", "Laser cameraAction", "PlaneAction")),
-        "Manual Operation" to Pair("models/Manual Operation.glb", listOf("Arrow 1Action.001", "PlaneAction.001")),
-        "Angle Selection" to Pair("models/Angle Selection.glb", listOf("Arrow 1Action.003", "Laser cameraAction.002", "Plane.001Action")),
+        "Automatic Levelling" to Pair("models/AL.glb", listOf("Colorful glowing arrow.08Action", "Laser cameraAction", "PlaneAction")),
+        "Manual Operation" to Pair("models/MO.glb", listOf("Arrow 1Action.001", "PlaneAction.001")),
+        "Angle Selection" to Pair("models/AS.glb", listOf("Arrow 1Action.003", "Laser cameraAction.002", "Plane.001Action")),
         "Rotational Operation" to Pair("models/RO.glb", listOf("Arrow 1Action.002", "Laser cameraAction.001", "PlaneAction", "Plane.001Action")),
-        "Battery Removal" to Pair("models/BR.glb", listOf("Closing LidAction.001","Open Latch.001Action.001","Laser cameraAction","Battery  v6Action"))
+        "Battery Removal" to Pair("models/BR.glb", listOf("EmptyAction","2","1","Battery  v6Action"))
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,7 +43,10 @@ class ModelPlacementActivity5 : AppCompatActivity() {
         arFragment = supportFragmentManager.findFragmentById(R.id.ux_fragment) as ArFragment
         fab = findViewById(R.id.fab)
         fabMenu = findViewById(R.id.fab_menu)
-        preloadModels()
+        lifecycleScope.launch {
+            preloadModels()
+//            listAllAvailableAnimations()
+        }
         enableFabMenuInteraction()
     }
 
@@ -113,6 +118,9 @@ class ModelPlacementActivity5 : AppCompatActivity() {
                     renderable = modelRenderable
                     setParent(anchorNode)
                     select()
+                    scaleController.isEnabled = false
+                    localScale = Vector3(0.5f, 0.5f, 0.5f) // Set fixed size
+
                 }
                 listAvailableAnimations()
                 models[modelName]?.second?.let { allAnimations(it) }
@@ -123,13 +131,21 @@ class ModelPlacementActivity5 : AppCompatActivity() {
         modelNode?.renderableInstance?.let { instance ->
             if (instance.animationCount > 0) {
                 lifecycleScope.launch {
-                    for (animationName in animations) {
+                    for ((index, animationName) in animations.withIndex()) {
+                        // Introduce a delay before starting the next animation for "Battery Removal"
+                        if (animationName == "2") {
+                            delay(2000L) // Delay for 1 second (adjust as needed)
+                        }
+
                         instance.animate(animationName).start()
+                        // Optional: Log to track which animation is being played
+                        Log.d("Animation", "Playing animation: $animationName at index $index")
                     }
                 }
             }
         }
     }
+
 
     private fun preloadModels() {
         lifecycleScope.launch {
@@ -166,6 +182,5 @@ class ModelPlacementActivity5 : AppCompatActivity() {
         } ?: Log.e("ModelPlacementActivity5", "Model instance is not initialized")
     }
 
-    private var tutorialStep = 0
-    private var tutorialOverlay: View? = null
+
 }

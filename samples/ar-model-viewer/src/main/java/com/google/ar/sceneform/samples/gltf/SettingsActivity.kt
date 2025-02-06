@@ -27,31 +27,8 @@ class SettingsActivity : AppCompatActivity() {
             finish()
         }
 
-        // Onboarding elements
-        onboardingOverlay = findViewById(R.id.onboarding_overlay)
-        tutorialText = findViewById(R.id.tutorial_text)
-        nextButton = findViewById(R.id.next_button)
-        skipButton = findViewById(R.id.skip_button)
-
-        val sharedPreferences: SharedPreferences = getSharedPreferences("AppPrefs", MODE_PRIVATE)
-        val isFirstLaunch = sharedPreferences.getBoolean("isFirstLaunch_Settings", true)
-
-        if (!isFirstLaunch) {
-            onboardingOverlay.visibility = View.GONE // Hide overlay if already seen
-        } else {
-            showTutorialStep()
-        }
-
-        // Tutorial navigation
-        nextButton.setOnClickListener {
-            tutorialStep++
-            showTutorialStep()
-        }
-
-        // Skip tutorial
-        skipButton.setOnClickListener {
-            onboardingOverlay.visibility = View.GONE
-            saveFirstLaunchPreference()
+        findViewById<View>(R.id.reset_tutorial_button).setOnClickListener {
+            resetTutorial()
         }
 
         // Button listeners
@@ -64,41 +41,6 @@ class SettingsActivity : AppCompatActivity() {
         findViewById<View>(R.id.about_us_section).setOnClickListener {
             onAboutUsClick(it)
         }
-    }
-
-    private fun showTutorialStep() {
-        when (tutorialStep) {
-            0 -> {
-                tutorialText.text = "This is where you can see the app version."
-                findViewById<View>(R.id.highlight_version_section).visibility = View.VISIBLE
-            }
-            1 -> {
-                tutorialText.text = "Tap here to change your language settings."
-                findViewById<View>(R.id.highlight_language_section).visibility = View.VISIBLE
-                findViewById<View>(R.id.highlight_version_section).visibility = View.GONE
-            }
-            2 -> {
-                tutorialText.text = "Contact us if you need any help!"
-                findViewById<View>(R.id.highlight_contact_us_section).visibility = View.VISIBLE
-                findViewById<View>(R.id.highlight_language_section).visibility = View.GONE
-            }
-            3 -> {
-                tutorialText.text = "Learn more about us."
-                findViewById<View>(R.id.highlight_about_us_section).visibility = View.VISIBLE
-                findViewById<View>(R.id.highlight_contact_us_section).visibility = View.GONE
-            }
-            4 -> {
-                onboardingOverlay.visibility = View.GONE
-                saveFirstLaunchPreference()
-            }
-        }
-    }
-
-    private fun saveFirstLaunchPreference() {
-        val sharedPreferences: SharedPreferences = getSharedPreferences("AppPrefs", MODE_PRIVATE)
-        val editor = sharedPreferences.edit()
-        editor.putBoolean("isFirstLaunch_Settings", false) // Mark tutorial as completed
-        editor.apply()
     }
 
     // Method for "About Us" click
@@ -131,6 +73,18 @@ class SettingsActivity : AppCompatActivity() {
         val chooser = Intent.createChooser(emailIntent, "Contact us via")
         chooser.putExtra(Intent.EXTRA_INITIAL_INTENTS, arrayOf(dialIntent))
         startActivity(chooser)
+    }
+    private fun resetTutorial() {
+        val sharedPreferences: SharedPreferences = getSharedPreferences("AppPrefs", MODE_PRIVATE)
+        val editor = sharedPreferences.edit()
+
+        // Reset tutorial flags
+        editor.putBoolean("isFirstLaunch", true)
+        editor.putBoolean("isFirstLaunch_ModelView", true)
+
+        editor.apply()
+
+        Toast.makeText(this, "Tutorials reset successfully!", Toast.LENGTH_SHORT).show()
     }
 
     // Method for "Language" click
