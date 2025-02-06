@@ -41,47 +41,8 @@ class ModelPlacementActivity5 : AppCompatActivity() {
         arFragment = supportFragmentManager.findFragmentById(R.id.ux_fragment) as ArFragment
         fab = findViewById(R.id.fab)
         fabMenu = findViewById(R.id.fab_menu)
-
-        // Check if the tutorial has been shown before
-        val sharedPreferences = getSharedPreferences("AppPrefs", MODE_PRIVATE)
-        val isTutorialCompleted = sharedPreferences.getBoolean("TutorialCompleted", false)
-
-        if (!isTutorialCompleted) {
-            // Show the tutorial overlay if it's the first time or tutorial isn't completed
-            val tutorialOverlay = layoutInflater.inflate(R.layout.tutorial_overlay, null)
-            val params = FrameLayout.LayoutParams(
-                FrameLayout.LayoutParams.MATCH_PARENT,
-                FrameLayout.LayoutParams.MATCH_PARENT
-            )
-            addContentView(tutorialOverlay, params)
-
-            val skipButton = tutorialOverlay.findViewById<Button>(R.id.skip_button)
-            val nextButton = tutorialOverlay.findViewById<Button>(R.id.next_button)
-
-            skipButton.setOnClickListener {
-                // Hide tutorial overlay and mark it as completed
-                tutorialOverlay.visibility = View.GONE
-                sharedPreferences.edit().putBoolean("TutorialCompleted", true).apply()
-                enableFabMenuInteraction() // Enable FAB menu interaction after tutorial ends
-            }
-
-            nextButton.setOnClickListener {
-                tutorialStep++
-                if (tutorialStep >= 2) {
-                    tutorialOverlay.visibility = View.GONE
-                    sharedPreferences.edit().putBoolean("TutorialCompleted", true).apply()
-                    enableFabMenuInteraction() // Enable FAB menu interaction after tutorial ends
-                } else {
-                    showTutorials()
-                }
-            }
-
-            showTutorials()
-        } else {
-            // Proceed to normal AR setup if tutorial is completed
-            preloadModels()
-            enableFabMenuInteraction() // Ensure FAB menu is enabled
-        }
+        preloadModels()
+        enableFabMenuInteraction()
     }
 
     private fun enableFabMenuInteraction() {
@@ -95,80 +56,7 @@ class ModelPlacementActivity5 : AppCompatActivity() {
         }
     }
 
-    private fun showTutorials() {
-        if (tutorialOverlay == null) {
-            tutorialOverlay = layoutInflater.inflate(R.layout.tutorial_overlay, null)
-            val params = FrameLayout.LayoutParams(
-                FrameLayout.LayoutParams.MATCH_PARENT,
-                FrameLayout.LayoutParams.MATCH_PARENT
-            )
-            addContentView(tutorialOverlay, params)
-        }
-
-        val highlightArrow = tutorialOverlay?.findViewById<ImageView>(R.id.highlight_arrow)
-        val tutorialText = tutorialOverlay?.findViewById<TextView>(R.id.tutorial_text)
-        val skipButton = tutorialOverlay?.findViewById<Button>(R.id.skip_button)
-        val nextButton = tutorialOverlay?.findViewById<Button>(R.id.next_button)
-
-        tutorialOverlay?.bringToFront() // Ensure it is on top
-
-        skipButton?.setOnClickListener {
-            (tutorialOverlay?.parent as? ViewGroup)?.removeView(tutorialOverlay)
-            tutorialOverlay = null
-            val sharedPreferences = getSharedPreferences("AppPrefs", MODE_PRIVATE)
-            sharedPreferences.edit().putBoolean("TutorialCompleted", true).apply()
-            enableFabMenuInteraction() // Enable FAB menu interaction after tutorial ends
-        }
-
-        nextButton?.setOnClickListener {
-            tutorialStep++
-            if (tutorialStep >= 2) {
-                (tutorialOverlay?.parent as? ViewGroup)?.removeView(tutorialOverlay)
-                tutorialOverlay = null
-                val sharedPreferences = getSharedPreferences("AppPrefs", MODE_PRIVATE)
-                sharedPreferences.edit().putBoolean("TutorialCompleted", true).apply()
-                enableFabMenuInteraction() // Enable FAB menu interaction after tutorial ends
-            } else {
-                showTutorials()
-            }
-        }
-
-        when (tutorialStep) {
-            0 -> {
-                tutorialText?.text = "Move your device to detect a plane"
-            }
-            1 -> {
-                highlightArrow?.setImageResource(R.drawable.arrow)
-                tutorialText?.text = "Tap the button to list features"
-
-                // Make sure `fab` is not null and check its layout params
-                val fab = tutorialOverlay?.findViewById<FloatingActionButton>(R.id.fab)
-                if (fab != null && fab.layoutParams is FrameLayout.LayoutParams) {
-                    val arrowWidth = highlightArrow?.width ?: 0
-                    val fabParams = fab.layoutParams as FrameLayout.LayoutParams
-
-                    // Adjust arrow position: X offset next to FAB, Y offset same as FAB
-                    val xOffset = fab.x + fab.width // Position next to the FAB
-                    val yOffset = fab.y // Align with FAB vertically
-
-                    val arrowParams = FrameLayout.LayoutParams(arrowWidth, arrowWidth)
-                    arrowParams.leftMargin = xOffset.toInt()
-                    arrowParams.topMargin = yOffset.toInt()
-
-                    highlightArrow?.layoutParams = arrowParams
-                    highlightArrow?.visibility = View.VISIBLE
-                } else {
-                    Log.e("ModelPlacementActivity5", "FAB or its layoutParams is null")
-                }
-            }
-            2 -> {
-                tutorialText?.text = "Select the feature to experience"
-            }
-        }
-    }
-
-
-
+//
     private fun showFabMenu() {
         fabOpened = true
         fabMenu.visibility = View.VISIBLE

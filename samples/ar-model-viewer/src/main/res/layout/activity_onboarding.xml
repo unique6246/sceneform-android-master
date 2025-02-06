@@ -15,8 +15,13 @@
             android:layout_height="match_parent"
             android:background="#80000000"
             android:visibility="visible">
-        
+
         <!-- Highlight Arrow Positioned Above the Button -->
+
+        <!-- Tutorial Text -->
+
+        <!-- Skip Button -->
+
         <ImageView
                 android:id="@+id/highlight_arrow"
                 android:layout_width="50dp"
@@ -25,23 +30,27 @@
                 android:scaleType="fitCenter"
                 android:layout_above="@id/button"
                 tools:ignore="MissingConstraints,NotSibling"
-                android:contentDescription="TODO"/>
-        
-        <!-- Tutorial Text -->
+                android:contentDescription="TODO"
+                android:rotation="45"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="136dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.221"/>
+
         <TextView
                 android:id="@+id/tutorial_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
                 android:text="Tap here to start experiencing the app!"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@id/highlight_arrow"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
-        
-        <!-- Skip Button -->
+                app:layout_constraintBottom_toTopOf="@+id/highlight_arrow"
+                android:layout_marginBottom="72dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
         <Button
                 android:id="@+id/skip_button"
                 android:layout_width="wrap_content"
@@ -52,7 +61,11 @@
                 android:textColor="@android:color/white"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:layout_margin="16dp"/>
-    
+                android:layout_margin="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.95"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.976"/>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

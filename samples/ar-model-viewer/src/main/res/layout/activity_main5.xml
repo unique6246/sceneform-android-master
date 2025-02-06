@@ -57,28 +57,8 @@
         <!-- Tutorial Text -->
 
         <!-- Navigation Buttons -->
-        <View
-                android:id="@+id/highlight_place_button"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="@drawable/arrow"
-                android:visibility="visible" android:layout_marginTop="63dp"
-                android:layout_below="@+id/tutorial_text" android:layout_alignParentEnd="true"
-                android:layout_marginEnd="42dp"/>
 
-        <TextView
-                android:id="@+id/tutorial_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="16dp"
-                android:text="Welcome to the tutorial!"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp"
-                android:textStyle="bold" android:layout_alignParentEnd="true"
-                android:layout_marginEnd="94dp" android:layout_alignParentStart="true"
-                android:layout_marginStart="93dp" android:layout_marginTop="290dp"
-                android:layout_alignParentTop="true"/>
-<!--        <Button-->
+        <!--        <Button-->
 <!--                android:id="@+id/next_button"-->
 <!--                android:layout_width="wrap_content"-->
 <!--                android:layout_height="wrap_content"-->
@@ -89,16 +69,48 @@
 <!--                android:background="@color/white"-->
 <!--                android:textColor="@color/black"/>-->
 
+        <View
+                android:id="@+id/highlight_place_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/arrow"
+                android:visibility="visible"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="295dp"
+                android:rotation="-36"
+                android:layout_marginTop="193dp"
+                android:layout_below="@+id/tutorial_text"/>
+
+        <TextView
+                android:id="@+id/tutorial_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Welcome to the tutorial!"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="87dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="267dp"
+                android:layout_alignParentTop="true"/>
+
         <Button
                 android:id="@+id/skip_button"
                 android:layout_width="89dp"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:text="Skip"
                 android:background="@drawable/rounded_button"
-                android:textColor="@color/black" android:layout_alignParentStart="true"
-                android:layout_marginStart="284dp" android:layout_marginLeft="16dp" android:layout_marginTop="810dp"
-                android:layout_marginRight="16dp" android:layout_marginEnd="38dp" android:layout_marginBottom="16dp"/>
+                android:textColor="@color/black"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="287dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginBottom="112dp"
+                android:layout_alignParentBottom="true"/>
     </RelativeLayout>
 </RelativeLayout>
