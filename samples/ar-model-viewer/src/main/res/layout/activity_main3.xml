@@ -15,15 +15,15 @@
             android:layout_width="145dp"
             android:background="@drawable/group_2_2"/>
     
-    <ImageButton
-            android:id="@+id/tools_button"
-            android:layout_width="145dp"
-            android:layout_height="80dp"
-            android:layout_below="@id/scan_button"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="69dp"
-            android:src="@drawable/group_3_2"
-            android:background="@drawable/group_3_2"/>
+<!--    <ImageButton-->
+<!--            android:id="@+id/tools_button"-->
+<!--            android:layout_width="145dp"-->
+<!--            android:layout_height="80dp"-->
+<!--            android:layout_below="@id/scan_button"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="69dp"-->
+<!--            android:src="@drawable/group_3_2"-->
+<!--            android:background="@drawable/group_3_2"/>-->
     
     <Button
             android:id="@+id/settings_button"
@@ -52,51 +52,55 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#80000000"
-            android:visibility="visible">
-        
+            android:layout_marginTop="0dp" android:layout_alignParentTop="true" android:visibility="visible">
+
         <!-- Highlights -->
+
         <View
                 android:id="@+id/highlight_scan_button"
-                android:layout_width="150dp"
-                android:layout_height="80dp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="100dp"
-                android:background="@drawable/highlight_border"
-                android:visibility="gone"/>
-        
-        <View
-                android:id="@+id/highlight_tools_button"
-                android:layout_width="150dp"
-                android:layout_height="80dp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="250dp"
-                android:background="@drawable/highlight_border"
-                android:visibility="gone"/>
-        
-        <View
-                android:id="@+id/highlight_settings_button"
-                android:layout_width="60dp"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/arrow"
+                android:visibility="visible"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="16dp"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/highlight_border"
-                android:visibility="gone"/>
-        
+                android:layout_marginEnd="128dp"
+                android:layout_marginTop="108dp"
+                android:layout_below="@+id/tutorial_text"/>
+<!--        <View-->
+<!--                android:id="@+id/highlight_tools_button"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginTop="257dp"-->
+<!--                android:background="@drawable/arrow"-->
+<!--                android:visibility="visible"-->
+<!--                android:layout_marginEnd="128dp"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_below="@+id/tutorial_text"/>-->
+<!--        <View-->
+<!--                android:id="@+id/highlight_settings_button"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_marginEnd="0dp"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:background="@drawable/arrow"-->
+<!--                android:visibility="visible"/>-->
+
         <!-- Tutorial Text -->
+
+        <!-- Navigation Buttons -->
         <TextView
                 android:id="@+id/tutorial_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_above="@id/highlight_scan_button"
-                android:layout_centerHorizontal="true"
                 android:padding="16dp"
                 android:text="Welcome to the tutorial!"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
-                android:textStyle="bold"/>
-        
-        <!-- Navigation Buttons -->
+                android:textStyle="bold" android:layout_alignParentEnd="true" android:layout_marginEnd="93dp"
+                android:layout_alignParentStart="true" android:layout_marginStart="94dp"
+                android:layout_marginTop="241dp"
+                android:layout_alignParentTop="true"/>
         <Button
                 android:id="@+id/next_button"
                 android:layout_width="wrap_content"
@@ -107,16 +111,19 @@
                 android:text="Next"
                 android:background="@color/white"
                 android:textColor="@color/black"/>
-        
+
         <Button
                 android:id="@+id/skip_button"
-                android:layout_width="wrap_content"
+                android:layout_width="85dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_margin="16dp"
                 android:text="Skip"
                 android:background="@color/white"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black" android:layout_marginTop="809dp" android:layout_marginStart="314dp"
+                android:layout_marginEnd="12dp" android:layout_marginBottom="16dp"
+                android:layout_alignParentStart="true" android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"/>
+
     </RelativeLayout>
 </RelativeLayout>

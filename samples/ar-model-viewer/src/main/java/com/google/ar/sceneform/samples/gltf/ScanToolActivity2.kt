@@ -24,7 +24,7 @@ class ScanToolActivity2 : AppCompatActivity() {
         setContentView(R.layout.activity_main3)
 
         val scanButton = findViewById<ImageButton>(R.id.scan_button)
-        val toolsButton = findViewById<ImageButton>(R.id.tools_button)
+//        val toolsButton = findViewById<ImageButton>(R.id.tools_button)
         val settingsButton = findViewById<Button>(R.id.settings_button)
 
         // Onboarding elements
@@ -56,14 +56,14 @@ class ScanToolActivity2 : AppCompatActivity() {
 
         // Button listeners
         scanButton.setOnClickListener {
-            val intent = Intent(this, ScanningActivity3::class.java)
+            val intent = Intent(this, ModelViewUsesActivity4::class.java)
             startActivity(intent)
         }
-
-        toolsButton.setOnClickListener {
-            val intent = Intent(this, ToolsListActivity7::class.java)
-            startActivity(intent)
-        }
+//
+//        toolsButton.setOnClickListener {
+//            val intent = Intent(this, ToolsListActivity7::class.java)
+//            startActivity(intent)
+//        }
 
         settingsButton.setOnClickListener {
             val intent = Intent(this, SettingsActivity::class.java)
@@ -76,22 +76,22 @@ class ScanToolActivity2 : AppCompatActivity() {
             0 -> {
                 tutorialText.text = "Tap here to scan and place models in your environment!"
                 findViewById<View>(R.id.highlight_scan_button).visibility = View.VISIBLE
-                findViewById<View>(R.id.highlight_tools_button).visibility = View.GONE
-                findViewById<View>(R.id.highlight_settings_button).visibility = View.GONE
+//                findViewById<View>(R.id.highlight_tools_button).visibility = View.GONE
+//                findViewById<View>(R.id.highlight_settings_button).visibility = View.GONE
             }
+//            1 -> {
+//                tutorialText.text = "Tap here to explore available tools and use cases!"
+//                findViewById<View>(R.id.highlight_scan_button).visibility = View.GONE
+//                findViewById<View>(R.id.highlight_tools_button).visibility = View.VISIBLE
+//                findViewById<View>(R.id.highlight_settings_button).visibility = View.GONE
+//            }
+//            2 -> {
+//                tutorialText.text = "Tap here to open settings and customize your experience!"
+//                findViewById<View>(R.id.highlight_scan_button).visibility = View.GONE
+//                findViewById<View>(R.id.highlight_tools_button).visibility = View.GONE
+//                findViewById<View>(R.id.highlight_settings_button).visibility = View.VISIBLE
+//            }
             1 -> {
-                tutorialText.text = "Tap here to explore available tools and use cases!"
-                findViewById<View>(R.id.highlight_scan_button).visibility = View.GONE
-                findViewById<View>(R.id.highlight_tools_button).visibility = View.VISIBLE
-                findViewById<View>(R.id.highlight_settings_button).visibility = View.GONE
-            }
-            2 -> {
-                tutorialText.text = "Tap here to open settings and customize your experience!"
-                findViewById<View>(R.id.highlight_scan_button).visibility = View.GONE
-                findViewById<View>(R.id.highlight_tools_button).visibility = View.GONE
-                findViewById<View>(R.id.highlight_settings_button).visibility = View.VISIBLE
-            }
-            3 -> {
                 onboardingOverlay.visibility = View.GONE
                 saveFirstLaunchPreference()
             }
