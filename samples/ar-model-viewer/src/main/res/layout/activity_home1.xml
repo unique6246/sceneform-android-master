@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#1D3A87"
-    tools:context=".ModelPlacementActivity5">
+    tools:context=".ModelPlacementActivity">
 
     <ImageButton
         android:id="@+id/button"
@@ -16,8 +16,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:srcCompat="@drawable/group_1_2"
-        android:background="@drawable/group_1_2"/>
+        app:srcCompat="@drawable/start"
+        android:background="@drawable/start"/>
 
     <ImageView
         android:id="@+id/imageView2"
@@ -38,7 +38,7 @@
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/anotherlogo" />
+        app:srcCompat="@drawable/front_page" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -48,6 +48,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bo" />
+        app:srcCompat="@drawable/bosch_bck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

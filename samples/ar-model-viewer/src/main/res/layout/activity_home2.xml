@@ -12,8 +12,8 @@
             android:layout_height="80dp"
             android:layout_centerInParent="true"
             android:layout_marginTop="100dp"
-            android:src="@drawable/group_5"
-            android:background="@drawable/group_5"/>
+            android:src="@drawable/placement_button"
+            android:background="@drawable/placement_button"/>
     
     <Button
             android:id="@+id/home_button"
@@ -36,13 +36,13 @@
             android:id="@+id/imageView4"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            app:srcCompat="@drawable/backbutton" />
+            app:srcCompat="@drawable/bosch_header" />
     
     <ImageView
             android:id="@+id/imageView6"
             android:layout_width="match_parent"
             android:layout_height="16dp"
-            app:srcCompat="@drawable/bo" />
+            app:srcCompat="@drawable/bosch_bck" />
     
     <!-- Onboarding Overlay -->
     <RelativeLayout

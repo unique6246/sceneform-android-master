@@ -27,7 +27,6 @@
             android:layout_margin="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:fabSize="normal"
-            android:background="@drawable/imgg"
             android:contentDescription="TODO"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"

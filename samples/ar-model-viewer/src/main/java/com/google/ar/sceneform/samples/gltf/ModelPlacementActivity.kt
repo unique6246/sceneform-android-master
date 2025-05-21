@@ -20,7 +20,7 @@ import com.gorisse.thomas.sceneform.scene.await
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
-class ModelPlacementActivity5 : AppCompatActivity() {
+class ModelPlacementActivity : AppCompatActivity() {
     private lateinit var arFragment: ArFragment
     private val loadedModels = mutableMapOf<String, ModelRenderable?>()
     private var anchorNode: AnchorNode? = null
@@ -32,20 +32,19 @@ class ModelPlacementActivity5 : AppCompatActivity() {
     private val models = mapOf(
         "Automatic Levelling" to Pair("models/AL.glb", listOf("Colorful glowing arrow.08Action", "Laser cameraAction", "PlaneAction")),
         "Manual Operation" to Pair("models/MO.glb", listOf("Arrow 1Action.001", "PlaneAction.001")),
-        "Angle Selection" to Pair("models/AS.glb", listOf("Arrow 1Action.003", "Laser cameraAction.002", "Plane.001Action")),
-        "Rotational Operation" to Pair("models/RO.glb", listOf("Arrow 1Action.002", "Laser cameraAction.001", "PlaneAction", "Plane.001Action")),
-        "Battery Removal" to Pair("models/BR.glb", listOf("EmptyAction","2","1","Battery  v6Action"))
+        "Mask Mode" to Pair("models/AS.glb", listOf("Arrow 1Action.003", "Laser cameraAction.002", "Plane.001Action")),
+        "Rotational Speed" to Pair("models/RO.glb", listOf("Arrow 1Action.002", "Laser cameraAction.001", "PlaneAction", "Plane.001Action"))
+//        "Battery Removal" to Pair("models/BR.glb", listOf("Battery  v6Action","Battery Removal 02","Battery removal 01"))
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main2)
+        setContentView(R.layout.activity_model)
         arFragment = supportFragmentManager.findFragmentById(R.id.ux_fragment) as ArFragment
         fab = findViewById(R.id.fab)
         fabMenu = findViewById(R.id.fab_menu)
         lifecycleScope.launch {
             preloadModels()
-//            listAllAvailableAnimations()
         }
         enableFabMenuInteraction()
     }
@@ -89,7 +88,7 @@ class ModelPlacementActivity5 : AppCompatActivity() {
     }
 
     private fun Int.dpToPx(): Int {
-        val density = this@ModelPlacementActivity5.resources.displayMetrics.density
+        val density = this@ModelPlacementActivity.resources.displayMetrics.density
         return (this * density).toInt()
     }
 
@@ -153,7 +152,7 @@ class ModelPlacementActivity5 : AppCompatActivity() {
                 val modelPath = data.first
                 try {
                     val modelRenderable = ModelRenderable.builder()
-                        .setSource(this@ModelPlacementActivity5, Uri.parse(modelPath))
+                        .setSource(this@ModelPlacementActivity, Uri.parse(modelPath))
                         .setIsFilamentGltf(true)
                         .await()
                     loadedModels[name] = modelRenderable
@@ -181,6 +180,4 @@ class ModelPlacementActivity5 : AppCompatActivity() {
             }
         } ?: Log.e("ModelPlacementActivity5", "Model instance is not initialized")
     }
-
-
 }

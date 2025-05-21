@@ -6,7 +6,7 @@
         android:layout_height="match_parent">
     
     <!-- Main App Content -->
-    <include layout="@layout/activity_main1" />
+    <include layout="@layout/activity_home1" />
     
     <!-- Onboarding Overlay -->
     <androidx.constraintlayout.widget.ConstraintLayout

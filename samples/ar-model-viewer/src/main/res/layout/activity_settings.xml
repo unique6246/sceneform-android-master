@@ -10,7 +10,7 @@
             android:id="@+id/imageView4"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            app:srcCompat="@drawable/screenshot_2024_10_10_at_3_19_56pm" />
+            app:srcCompat="@drawable/settings_header" />
     
     <!-- Divider Image -->
     <ImageView
@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="16dp"
             android:layout_below="@id/imageView4"
-            app:srcCompat="@drawable/bo"/>
+            app:srcCompat="@drawable/bosch_bck"/>
     
     <!-- Back Button -->
     <Button

@@ -20,7 +20,7 @@ class SettingsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main7)
+        setContentView(R.layout.activity_settings)
 
         val backButton = findViewById<Button>(R.id.back_button)
         backButton.setOnClickListener {

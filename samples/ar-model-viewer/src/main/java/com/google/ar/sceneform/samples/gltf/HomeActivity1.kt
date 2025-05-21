@@ -12,7 +12,7 @@ class HomeActivity1 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_onboarding) // Include onboarding layout
+        setContentView(R.layout.activity_tutorial) // Include onboarding layout
 
         val second = findViewById<ImageButton>(R.id.button)
         val onboardingOverlay = findViewById<View>(R.id.onboarding_overlay)
@@ -28,10 +28,11 @@ class HomeActivity1 : AppCompatActivity() {
         }
 
 
+
         // When user clicks tutorial button
         second.setOnClickListener {
             onboardingOverlay.visibility = View.GONE
-            val intent = Intent(this, ModelViewUsesActivity4::class.java)
+            val intent = Intent(this, HomeActivity2::class.java)
             startActivity(intent)
             saveFirstLaunchPreference()
         }
