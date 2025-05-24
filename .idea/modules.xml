@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/sceneform-android-master.core.iml" filepath="$PROJECT_DIR$/.idea/modules/core/sceneform-android-master.core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/samples/3d-model-viewer/sceneform-android-master.sample-3d-model-viewer.iml" filepath="$PROJECT_DIR$/.idea/modules/samples/3d-model-viewer/sceneform-android-master.sample-3d-model-viewer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/samples/ar-model-viewer/sceneform-android-master.sample-ar-model-viewer.iml" filepath="$PROJECT_DIR$/.idea/modules/samples/ar-model-viewer/sceneform-android-master.sample-ar-model-viewer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/samples/ar-model-viewer-java/sceneform-android-master.sample-ar-model-viewer-java.iml" filepath="$PROJECT_DIR$/.idea/modules/samples/ar-model-viewer-java/sceneform-android-master.sample-ar-model-viewer-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/samples/augmented-faces/sceneform-android-master.sample-augmented-faces.iml" filepath="$PROJECT_DIR$/.idea/modules/samples/augmented-faces/sceneform-android-master.sample-augmented-faces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/samples/augmented-images/sceneform-android-master.sample-augmented-images.iml" filepath="$PROJECT_DIR$/.idea/modules/samples/augmented-images/sceneform-android-master.sample-augmented-images.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/samples/depth/sceneform-android-master.sample-depth.iml" filepath="$PROJECT_DIR$/.idea/modules/samples/depth/sceneform-android-master.sample-depth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/samples/environment-lights/sceneform-android-master.sample-environment-lights.iml" filepath="$PROJECT_DIR$/.idea/modules/samples/environment-lights/sceneform-android-master.sample-environment-lights.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/samples/image-texture/sceneform-android-master.sample-image-texture.iml" filepath="$PROJECT_DIR$/.idea/modules/samples/image-texture/sceneform-android-master.sample-image-texture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sceneform/sceneform-android-master.sceneform.iml" filepath="$PROJECT_DIR$/.idea/modules/sceneform/sceneform-android-master.sceneform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ux/sceneform-android-master.ux.iml" filepath="$PROJECT_DIR$/.idea/modules/ux/sceneform-android-master.ux.iml" />
+    </modules>
+  </component>
+</project>

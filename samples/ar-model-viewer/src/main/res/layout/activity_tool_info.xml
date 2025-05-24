@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="#1D3A87">
+	<ImageView
+			android:id="@+id/imageView4"
+			android:layout_width="match_parent"
+			android:layout_height="100dp"
+			app:srcCompat="@drawable/bosch_header2" />
+	
+	<ImageView
+			android:id="@+id/imageView6"
+			android:layout_width="match_parent"
+			android:layout_height="16dp"
+			app:srcCompat="@drawable/bosch_bck" />
+	
+	<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/toolRecyclerView"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_below="@id/imageView4"
+			android:padding="16dp" />
+</RelativeLayout>

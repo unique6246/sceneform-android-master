@@ -4,15 +4,15 @@ plugins {
 }
 
 android {
-    compileSdk rootProject.ext.compileSdk
+    compileSdk 34
     compileSdkVersion rootProject.ext.compileSdk
 
     defaultConfig {
         applicationId "com.google.ar.sceneform.samples.gltf"
 
         // Sceneform requires minSdk >= 24.
-        minSdk rootProject.ext.minSdk
-        targetSdk rootProject.ext.targetSdk
+        minSdk 24
+        targetSdk 34
         versionCode 1
         versionName "1.0"
     }

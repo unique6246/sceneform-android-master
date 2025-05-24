@@ -25,6 +25,7 @@ class HomeActivity2 : AppCompatActivity() {
         val placeButton = findViewById<ImageButton>(R.id.place_button)
         val homeButton = findViewById<Button>(R.id.home_button)
         val settingsButton = findViewById<Button>(R.id.settings_button)
+        val toolInfoButton = findViewById<ImageButton>(R.id.tools_info_button)
 
         // Onboarding elements
         onboardingOverlay = findViewById(R.id.onboarding_overlay)
@@ -46,6 +47,10 @@ class HomeActivity2 : AppCompatActivity() {
         skipButton.setOnClickListener {
             onboardingOverlay.visibility = View.GONE
             saveFirstLaunchPreference()
+        }
+        toolInfoButton.setOnClickListener {
+            val intent = Intent(this, ToolInfoActivity::class.java)
+            startActivity(intent)
         }
 
         // Button listeners

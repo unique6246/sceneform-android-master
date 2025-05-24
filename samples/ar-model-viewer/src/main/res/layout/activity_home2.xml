@@ -12,8 +12,19 @@
             android:layout_height="80dp"
             android:layout_centerInParent="true"
             android:layout_marginTop="100dp"
+            android:scaleType="fitXY"
             android:src="@drawable/placement_button"
             android:background="@drawable/placement_button"/>
+    <ImageButton
+            android:id="@+id/tools_info_button"
+            android:layout_width="325dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/place_button"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/tool_info"
+            android:background="@drawable/tool_info"/>
     
     <Button
             android:id="@+id/home_button"

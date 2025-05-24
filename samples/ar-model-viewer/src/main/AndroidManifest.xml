@@ -42,6 +42,9 @@
                 android:name=".ModelPlacementActivity"
                 android:exported="false" />
         <activity
+                android:name=".ToolInfoActivity"
+                android:exported="true"/>
+        <activity
                 android:name=".HomeActivity1"
                 android:exported="true">
             <intent-filter>
