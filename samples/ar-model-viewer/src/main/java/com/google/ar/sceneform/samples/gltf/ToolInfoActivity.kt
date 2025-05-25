@@ -30,7 +30,7 @@ class ToolInfoActivity : AppCompatActivity() {
                 )
             ),
             ToolItem(
-                "Power Button", "Press the power button to turn on the tool.\n" +
+                "Power Button", "Press and hold the power button to turn on the tool.\n" +
                         "The tool automatically self-levels using internal sensors.\n" +
                         "A steady laser beam means leveling is successful.",
                 listOf(
@@ -50,7 +50,7 @@ class ToolInfoActivity : AppCompatActivity() {
             ),
             ToolItem(
                 "Rotational Speed", "Access Speed Settings via the control panel.\n" +
-                        "Select Desired RPM using arrow keys (150, 300, 600).\n" +
+                        "Select Desired RPM using the same button (150, 300, 600).\n" +
                         "The laser will rotate at the chosen speed.",
                 listOf(
                     MediaItem(MediaType.IMAGE, R.drawable.rotation_speed),

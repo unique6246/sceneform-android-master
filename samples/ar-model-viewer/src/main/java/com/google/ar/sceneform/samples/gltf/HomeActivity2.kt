@@ -41,8 +41,6 @@ class HomeActivity2 : AppCompatActivity() {
             onboardingOverlay.visibility = View.GONE
         }
 
-
-
         // Skip tutorial
         skipButton.setOnClickListener {
             onboardingOverlay.visibility = View.GONE
