@@ -8,6 +8,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class HomeActivity2 : AppCompatActivity() {
@@ -25,7 +26,7 @@ class HomeActivity2 : AppCompatActivity() {
         val placeButton = findViewById<ImageButton>(R.id.place_button)
         val homeButton = findViewById<Button>(R.id.home_button)
         val settingsButton = findViewById<Button>(R.id.settings_button)
-        val toolInfoButton = findViewById<ImageButton>(R.id.tools_info_button)
+        val scanButton = findViewById<ImageButton>(R.id.scan_button)
 
         // Onboarding elements
         onboardingOverlay = findViewById(R.id.onboarding_overlay)
@@ -46,10 +47,6 @@ class HomeActivity2 : AppCompatActivity() {
             onboardingOverlay.visibility = View.GONE
             saveFirstLaunchPreference()
         }
-        toolInfoButton.setOnClickListener {
-            val intent = Intent(this, ToolInfoActivity::class.java)
-            startActivity(intent)
-        }
 
         // Button listeners
         placeButton.setOnClickListener {
@@ -64,6 +61,10 @@ class HomeActivity2 : AppCompatActivity() {
 
         settingsButton.setOnClickListener {
             val intent = Intent(this, SettingsActivity::class.java)
+            startActivity(intent)
+        }
+        scanButton.setOnClickListener {
+            val intent = Intent("com.example.yololitertobjectdetection.OPEN_FROM_APP_A")
             startActivity(intent)
         }
     }
