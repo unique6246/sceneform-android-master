@@ -41,7 +41,6 @@ If not already installed:
 ---
 ### 3. Set Up SDK Location
 - Ensure your local.properties or .properties file has:
-
 - sdk.dir=C:\\Users\\<YourUsername>\\AppData\\Local\\Android\\Sdk
 - Update <YourUsername> to your Windows username.
 
