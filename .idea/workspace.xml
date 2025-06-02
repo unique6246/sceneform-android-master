@@ -38,13 +38,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d325f4c-ca96-4ca1-9de7-e7e27a373ba0" name="Changes" comment="rotary-laser-logo">
-      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CONTRIBUTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MIGRATING-1.15.0-1.16.0.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="2d325f4c-ca96-4ca1-9de7-e7e27a373ba0" name="Changes" comment="rotary-laser-README file" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -667,7 +661,7 @@
       <workItem from="1748063566988" duration="4411000" />
       <workItem from="1748164813156" duration="8699000" />
       <workItem from="1748689440792" duration="1781000" />
-      <workItem from="1748857328209" duration="1305000" />
+      <workItem from="1748857328209" duration="1741000" />
     </task>
     <task id="LOCAL-00001" summary="setup">
       <option name="closed" value="true" />
@@ -757,7 +751,23 @@
       <option name="project" value="LOCAL" />
       <updated>1748689720901</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="rotary-laser-README file">
+      <option name="closed" value="true" />
+      <created>1748858668373</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1748858668373</updated>
+    </task>
+    <task id="LOCAL-00013" summary="rotary-laser-README file">
+      <option name="closed" value="true" />
+      <created>1748859030437</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1748859030437</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -788,6 +798,7 @@
     <MESSAGE value="Rotary laser Overview" />
     <MESSAGE value="bosch_rotary_laser_tool" />
     <MESSAGE value="rotary-laser-logo" />
-    <option name="LAST_COMMIT_MESSAGE" value="rotary-laser-logo" />
+    <MESSAGE value="rotary-laser-README file" />
+    <option name="LAST_COMMIT_MESSAGE" value="rotary-laser-README file" />
   </component>
 </project>

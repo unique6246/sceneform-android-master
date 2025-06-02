@@ -5,7 +5,7 @@ An Android application that renders 3D GLTF models using Sceneform and Filament 
 
 ---
 
-## 📦 Project Overview
+### 📦 Project Overview
 
 - Built with **Kotlin**, **Coroutines**, and **AndroidX**
 - Uses **Sceneform**, **Filament**, and **ARCore**
@@ -13,10 +13,8 @@ An Android application that renders 3D GLTF models using Sceneform and Filament 
 - Configured for **Maven Central Publishing**
 - Requires **Homebrew-installed JDK**
 - Not a standalone app — relies on another **companion app** installed beforehand
-
 ---
-
-## 🧱 Prerequisites
+### 🧱 Prerequisites
 
 ### ✅ 1. Install the Companion App (REQUIRED)
 
@@ -33,7 +31,6 @@ git clone https://github.com/unique6246/Android_App.git
 cd Android_App
 ```
 ---
-
 ### 🍺 2. Install Homebrew (macOS/Linux)
 
 If not already installed:
@@ -41,13 +38,13 @@ If not already installed:
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
-
+---
 ### 3. Set Up SDK Location
 - Ensure your local.properties or .properties file has:
 
 sdk.dir=C:\\Users\\<YourUsername>\\AppData\\Local\\Android\\Sdk
 Update <YourUsername> to your Windows username.
-
+---
 ### 4. Open in Android Studio
 - Select Open an existing project
 - Wait for Gradle sync to complete
@@ -58,8 +55,6 @@ Use the Gradle wrapper:
 ./gradlew assembleDebug
 ```
 Or run directly from Android Studio using the green “Run” button.
-
-
 Useful Gradle Commands
 Print project properties:
 ```bash
@@ -70,6 +65,7 @@ Clean build:
 ```bash
 ./gradlew clean
 ```
+---
 ### 5. 🛠️ Build Configuration
 - compileSdk: 34
 
@@ -87,6 +83,7 @@ Clean build:
 
 - .filamat and .ktx files are excluded from compression
 
+---
 ### 6. 📦 Dependencies
 ## 🔤 Language + Concurrency
 - Kotlin Standard Library
