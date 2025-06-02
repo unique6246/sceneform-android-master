@@ -1,31 +1,29 @@
-# Sceneform AR App
+# Sceneform AR App (GLTF Sample)
 
-This Android project uses Sceneform to render 3D models (GLTF format) in Augmented Reality (AR) on supported Android devices. It uses Filament for physically based rendering and integrates ARCore for augmented reality functionality.
-
-## Features
-
-- Sceneform support with custom versioning
-- ARCore integration
-- GLTF model loading
-- Kotlin & Coroutines
-- Material Design Components
-- Maven Central publish-ready
-- Jetifier and AndroidX enabled
+An Android application that renders 3D GLTF models using Sceneform and Filament in Augmented Reality (AR).  
+⚠️ This project **requires a companion Android app** to be installed on the device **before** this app can run correctly. It also depends on a JDK installed via **Homebrew**.
 
 ---
 
-## Requirements
+## 📦 Project Overview
 
-- **Android Studio**: Chipmunk or later (AGP 7.2.0+)
-- **JDK**: 8 or newer
-- **Android SDK**: Minimum API 24, Target API 34
-- A device that supports **ARCore**
+- Built with **Kotlin**, **Coroutines**, and **AndroidX**
+- Uses **Sceneform**, **Filament**, and **ARCore**
+- Loads and renders **GLTF** 3D assets
+- Configured for **Maven Central Publishing**
+- Requires **Homebrew-installed JDK**
+- Not a standalone app — relies on another **companion app** installed beforehand
 
 ---
 
-## Getting Started
+## 🧱 Prerequisites
 
-### 1. Clone the Repository
+### ✅ 1. Install the Companion App (REQUIRED)
+
+This app depends on a separate companion app (e.g. background service or model provider).  
+You **must** install this app on the device before launching this application.
+
+> If the companion app is not present, this app will fail to start or function properly.
 
 ```bash
 git clone https://github.com/unique6246/sceneform-android-master.git
@@ -33,15 +31,24 @@ cd sceneform-android-master
 
 git clone https://github.com/unique6246/Android_App.git
 cd Android_App
-
 ```
-### 2. Set Up SDK Location
+---
+
+### 🍺 2. Install Homebrew (macOS/Linux)
+
+If not already installed:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+### 3. Set Up SDK Location
 - Ensure your local.properties or .properties file has:
 
 sdk.dir=C:\\Users\\<YourUsername>\\AppData\\Local\\Android\\Sdk
 Update <YourUsername> to your Windows username.
 
-### 3. Open in Android Studio
+### 4. Open in Android Studio
 - Select Open an existing project
 - Wait for Gradle sync to complete
 
@@ -63,7 +70,7 @@ Clean build:
 ```bash
 ./gradlew clean
 ```
-### 🛠️ Build Configuration
+### 5. 🛠️ Build Configuration
 - compileSdk: 34
 
 - minSdk: 24
@@ -80,7 +87,7 @@ Clean build:
 
 - .filamat and .ktx files are excluded from compression
 
-### 📦 Dependencies
+### 6. 📦 Dependencies
 ## 🔤 Language + Concurrency
 - Kotlin Standard Library
 
